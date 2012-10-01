@@ -6,7 +6,7 @@ https://stellar.mit.edu/S/course/6/fa12/6.170/courseMaterial/topics/topic2/proje
 
 ###Heroku URL
 
-Please put it here: http://sampleapp.herokuapp.com
+http://protected-coast-6930.herokuapp.com/
 
 ###Notes
 
