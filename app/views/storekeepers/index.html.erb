@@ -1,0 +1,27 @@
+<h1>Listing storekeepers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Password digest</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @storekeepers.each do |storekeeper| %>
+  <tr>
+    <td><%= storekeeper.name %></td>
+    <td><%= storekeeper.email %></td>
+    <td><%= storekeeper.password_digest %></td>
+    <td><%= link_to 'Show', storekeeper %></td>
+    <td><%= link_to 'Edit', edit_storekeeper_path(storekeeper) %></td>
+    <td><%= link_to 'Destroy', storekeeper, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Storekeeper', new_storekeeper_path %>

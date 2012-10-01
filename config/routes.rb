@@ -1,4 +1,12 @@
 MmiyachiProj2::Application.routes.draw do
+  get "static_pages/home"
+
+  resources :items
+
+  resources :stores
+
+  resources :storekeepers
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

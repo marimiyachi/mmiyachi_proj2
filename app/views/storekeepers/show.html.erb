@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @storekeeper.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @storekeeper.email %>
+</p>
+
+<p>
+  <b>Password digest:</b>
+  <%= @storekeeper.password_digest %>
+</p>
+
+
+<%= link_to 'Edit', edit_storekeeper_path(@storekeeper) %> |
+<%= link_to 'Back', storekeepers_path %>
