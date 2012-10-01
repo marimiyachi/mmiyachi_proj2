@@ -1,5 +1,22 @@
+<% provide(:title, 'Storekeeper Sign Up') %>
 <h1>New storekeeper</h1>
 
-<%= render 'form' %>
+<div class="row">
+  <div class="span 6 offset3">
+    <%= form_for(@storekeeper) do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
 
-<%= link_to 'Back', storekeepers_path %>
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+      
+      <%= f.label :password %>
+      <%= f.text_field :password %>
+
+      <%= f.label :password_confirmation, "Confirmation" %>
+      <%= f.text_field :password_confirmation %>
+
+      <%= f.submit "Create Storekeeper Account", class: "btn btn-larg btn-primary" %>
+    <% end %>
+  </div>
+</div>

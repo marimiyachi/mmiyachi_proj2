@@ -2,10 +2,10 @@ MmiyachiProj2::Application.routes.draw do
   root to: 'static_pages#home'
 
   resources :items
-
   resources :stores
-
   resources :storekeepers
+
+  match '/storekeepersignup', to: 'storekeepers#new'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
