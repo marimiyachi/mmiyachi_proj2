@@ -237,3 +237,1110 @@ Served asset /storekeepers.js - 304 Not Modified (0ms)
 
 Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 21:54:34 -0700
 Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2012-09-30 21:59:34 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+Compiled static_pages.css  (1ms)  (pid 8098)
+Compiled application.css  (6ms)  (pid 8098)
+Compiled static_pages.js  (101ms)  (pid 8098)
+Compiled application.js  (109ms)  (pid 8098)
+Completed 200 OK in 173ms (Views: 172.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 21:59:34 -0700
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 21:59:34 -0700
+Served asset /static_pages.css - 200 OK (1ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 21:59:34 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 21:59:34 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 21:59:34 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 21:59:34 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 21:59:34 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 21:59:34 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 21:59:34 -0700
+Served asset /application.js - 304 Not Modified (52ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 21:59:34 -0700
+Served asset /static_pages.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 21:59:34 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 21:59:34 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 21:59:34 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2012-09-30 22:01:12 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 8ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:13 -0700
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:13 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:13 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:13 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:13 -0700
+Served asset /items.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:13 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:13 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:13 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:13 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:13 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:13 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:13 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:13 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2012-09-30 22:01:15 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:15 -0700
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:15 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:15 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:15 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:15 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:15 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:15 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:15 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:15 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:15 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:15 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:15 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:15 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2012-09-30 22:01:16 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 30ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:16 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:16 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:16 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:16 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:16 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:16 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:16 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:16 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:16 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:16 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:16 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:16 -0700
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:16 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2012-09-30 22:01:34 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:34 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:34 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:34 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:34 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:34 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:34 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:34 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:34 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:34 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:34 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:34 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:34 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:34 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2012-09-30 22:01:34 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 13ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:34 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:34 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:34 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:34 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:34 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:34 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:34 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:34 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:34 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:34 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:34 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:34 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:34 -0700
+Served asset /application.js - 304 Not Modified (40ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2012-09-30 22:01:35 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:35 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:35 -0700
+Served asset /scaffolds.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:35 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:35 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:35 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:35 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:35 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:35 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:35 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:35 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:35 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:35 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:35 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2012-09-30 22:01:36 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:36 -0700
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:36 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:36 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:36 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:36 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 22:01:36 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:36 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:36 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:36 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:36 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:36 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:36 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 22:01:36 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2012-09-30 22:02:49 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 22:02:49 -0700
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 22:02:49 -0700
+Served asset /jquery.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 22:02:49 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 22:02:49 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 22:02:49 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 22:02:49 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 22:02:49 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 22:02:49 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 22:02:50 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 22:02:50 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 22:02:50 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 22:02:50 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 22:02:50 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2012-09-30 22:03:10 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 22:03:10 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 22:03:10 -0700
+Served asset /scaffolds.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 22:03:10 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 22:03:10 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 22:03:10 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 22:03:10 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 22:03:10 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 22:03:10 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 22:03:10 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 22:03:10 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 22:03:10 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 22:03:10 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 22:03:10 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2012-09-30 22:09:37 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 22:09:37 -0700
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 22:09:37 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 22:09:37 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 22:09:37 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 22:09:37 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 22:09:37 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 22:09:37 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 22:09:37 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 22:09:37 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 22:09:37 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 22:09:37 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 22:09:37 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 22:09:37 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2012-09-30 22:10:57 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (20.6ms)
+Completed 500 Internal Server Error in 107ms
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap.
+Load path: Sass::Rails::Importer(/home/ubuntu/6170_projects/mmiyachi_proj2/app/assets/stylesheets/custom.css.scss)
+  (in /home/ubuntu/6170_projects/mmiyachi_proj2/app/assets/stylesheets/custom.css.scss)):
+    2: <html>
+    3: <head>
+    4:   <title>Mari's Shopping Cart | <%= yield(:title) %></title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/custom.css.scss:1
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___95391767__622806078'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.6ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.9ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2012-09-30 22:11:21 -0700
+Connecting to database specified by database.yml
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (21.8ms)
+Compiled custom.css  (1286ms)  (pid 8781)
+Compiled application.css  (1296ms)  (pid 8781)
+Completed 200 OK in 1411ms (Views: 1410.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 22:11:23 -0700
+Served asset /application.css - 304 Not Modified (56ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 22:11:23 -0700
+Served asset /custom.css - 200 OK (8ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 22:11:23 -0700
+Served asset /storekeepers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 22:11:23 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 22:11:23 -0700
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 22:11:23 -0700
+Served asset /items.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 22:11:23 -0700
+Served asset /stores.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 22:11:23 -0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 22:11:23 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 22:11:23 -0700
+Served asset /items.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 22:11:23 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 22:11:23 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 22:11:23 -0700
+Served asset /stores.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 22:11:23 -0700
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2012-09-30 22:12:35 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.2ms)
+Compiled custom.css  (474ms)  (pid 8781)
+Compiled application.css  (1ms)  (pid 8781)
+Completed 200 OK in 576ms (Views: 575.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 22:12:36 -0700
+Served asset /application.css - 304 Not Modified (28ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 22:12:36 -0700
+Served asset /storekeepers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 22:12:36 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 22:12:36 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 22:12:36 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 22:12:36 -0700
+Served asset /custom.css - 200 OK (39ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 22:12:36 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 22:12:36 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 22:12:36 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 22:12:36 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 22:12:36 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 22:12:36 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 22:12:36 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 22:12:36 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2012-09-30 22:16:33 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 57ms
+
+ActionView::Template::Error (Invalid CSS after "...form: uppercase": expected ";", was ":"
+  (in /home/ubuntu/6170_projects/mmiyachi_proj2/app/assets/stylesheets/custom.css.scss)):
+    2: <html>
+    3: <head>
+    4:   <title>Mari's Shopping Cart | <%= yield(:title) %></title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/custom.css.scss:45
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___86805274__618684258'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.0ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2012-09-30 22:16:49 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.2ms)
+Compiled custom.css  (504ms)  (pid 8781)
+Compiled application.css  (1ms)  (pid 8781)
+Completed 200 OK in 586ms (Views: 585.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 22:16:50 -0700
+Served asset /application.css - 304 Not Modified (36ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 22:16:50 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 22:16:50 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 22:16:50 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 22:16:50 -0700
+Served asset /custom.css - 200 OK (31ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 22:16:50 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 22:16:50 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 22:16:50 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 22:16:50 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 22:16:50 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 22:16:50 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 22:16:50 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 22:16:50 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 22:16:50 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-09-30 22:18:02 -0700
+Served asset /rails.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-09-30 22:18:15 -0700
+Connecting to database specified by database.yml
+Served asset /rails.png - 304 Not Modified (1ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2012-09-30 22:18:22 -0700
+
+ActionController::RoutingError (No route matches [GET] "/static_pages/home"):
+  actionpack (3.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.7) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.7) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.7) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.7) lib/rails/engine.rb:479:in `call'
+  railties (3.2.7) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.7) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (7.7ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-09-30 22:18:31 -0700
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-30 22:18:45 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 62ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 22:18:45 -0700
+Served asset /application.css - 304 Not Modified (41ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 22:18:45 -0700
+Served asset /static_pages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 22:18:45 -0700
+Served asset /scaffolds.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 22:18:45 -0700
+Served asset /storekeepers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 22:18:45 -0700
+Served asset /custom.css - 304 Not Modified (30ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 22:18:45 -0700
+Served asset /items.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 22:18:45 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 22:18:45 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 22:18:45 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 22:18:45 -0700
+Served asset /items.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 22:18:45 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 22:18:45 -0700
+Served asset /storekeepers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 22:18:45 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 22:18:45 -0700
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-30 22:19:41 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 48ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 22:19:41 -0700
+Served asset /application.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 22:19:41 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 22:19:41 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 22:19:41 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 22:19:41 -0700
+Served asset /custom.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 22:19:41 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 22:19:41 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 22:19:41 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 22:19:41 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 22:19:41 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 22:19:41 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 22:19:41 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 22:19:41 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 22:19:41 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-30 22:19:43 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 46ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 22:19:43 -0700
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 22:19:43 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 22:19:43 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 22:19:43 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 22:19:43 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 22:19:43 -0700
+Served asset /custom.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 22:19:43 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 22:19:43 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 22:19:43 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 22:19:43 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 22:19:43 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 22:19:43 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 22:19:43 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 22:19:43 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
