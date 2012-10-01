@@ -1878,3 +1878,2450 @@ Served asset /storekeepers.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 22:47:41 -0700
 Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-30 22:50:37 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 22:50:37 -0700
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 22:50:37 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 22:50:37 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 22:50:37 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 22:50:37 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 22:50:37 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 22:50:37 -0700
+Served asset /custom.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 22:50:37 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 22:50:37 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 22:50:37 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 22:50:37 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 22:50:37 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 22:50:37 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 22:50:37 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/storekeepers/new" for 127.0.0.1 at 2012-09-30 22:50:39 -0700
+Processing by StorekeepersController#new as HTML
+  Rendered storekeepers/new.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 38ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 22:50:39 -0700
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 22:50:39 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 22:50:39 -0700
+Served asset /custom.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 22:50:39 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 22:50:39 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 22:50:39 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 22:50:39 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 22:50:39 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 22:50:39 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 22:50:39 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 22:50:39 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 22:50:39 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 22:50:39 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 22:50:39 -0700
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-30 22:50:41 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 49ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 22:50:41 -0700
+Served asset /application.css - 304 Not Modified (23ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 22:50:41 -0700
+Served asset /custom.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 22:50:41 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 22:50:41 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 22:50:41 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 22:50:41 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 22:50:41 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 22:50:41 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 22:50:41 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 22:50:41 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 22:50:41 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 22:50:41 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 22:50:41 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 22:50:41 -0700
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-30 22:57:41 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+Compiled sessions.css  (1ms)  (pid 9337)
+Compiled application.css  (6ms)  (pid 9337)
+Compiled sessions.js  (111ms)  (pid 9337)
+Compiled application.js  (119ms)  (pid 9337)
+Completed 200 OK in 221ms (Views: 221.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 22:57:42 -0700
+Served asset /application.css - 304 Not Modified (28ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 22:57:42 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-30 22:57:42 -0700
+Served asset /sessions.css - 200 OK (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 22:57:42 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 22:57:42 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 22:57:42 -0700
+Served asset /custom.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 22:57:42 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 22:57:42 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 22:57:42 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 22:57:42 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 22:57:42 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-30 22:57:42 -0700
+Served asset /sessions.js - 200 OK (1ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 22:57:42 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 22:57:42 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 22:57:42 -0700
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 22:57:42 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/storekeepersignin" for 127.0.0.1 at 2012-09-30 22:57:43 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 22:57:43 -0700
+Served asset /application.css - 304 Not Modified (30ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 22:57:43 -0700
+Served asset /custom.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 22:57:43 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 22:57:43 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 22:57:43 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-30 22:57:43 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 22:57:43 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 22:57:43 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 22:57:43 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 22:57:43 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 22:57:43 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 22:57:43 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 22:57:43 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 22:57:43 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 22:57:43 -0700
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-30 22:57:43 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateStorekeepers (20121001044908)
+Migrating to CreateStores (20121001045311)
+Migrating to CreateItems (20121001045412)
+Migrating to AddIndexToUsersEmail (20121001052659)
+Migrating to AddRememberTokenToStorekeepers (20121001060058)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121001060058')
+  [1m[36m (85.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("items")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("storekeepers")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_storekeepers_on_email')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("stores")[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateStorekeepers (20121001044908)
+Migrating to CreateStores (20121001045311)
+Migrating to CreateItems (20121001045412)
+Migrating to AddIndexToUsersEmail (20121001052659)
+Migrating to AddRememberTokenToStorekeepers (20121001060058)
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("items")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("storekeepers")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_storekeepers_on_email')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("stores")[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateStorekeepers (20121001044908)
+Migrating to CreateStores (20121001045311)
+Migrating to CreateItems (20121001045412)
+Migrating to AddIndexToUsersEmail (20121001052659)
+Migrating to AddRememberTokenToStorekeepers (20121001060058)
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("items")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("storekeepers")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_storekeepers_on_email')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("stores")[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateStorekeepers (20121001044908)
+Migrating to CreateStores (20121001045311)
+Migrating to CreateItems (20121001045412)
+Migrating to AddIndexToUsersEmail (20121001052659)
+Migrating to AddRememberTokenToStorekeepers (20121001060448)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "storekeepers" ADD "remember_token" varchar(255)
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("storekeepers")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_storekeepers_on_email')
+  [1m[36m (0.2ms)[0m  [1mCREATE INDEX "index_storekeepers_on_remember_token" ON "storekeepers" ("remember_token")[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121001060448')
+  [1m[36m (26.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("items")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("storekeepers")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_storekeepers_on_remember_token')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_storekeepers_on_email')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("stores")
+
+
+Started GET "/storekeepersignin" for 127.0.0.1 at 2012-09-30 23:12:42 -0700
+
+SyntaxError (/home/ubuntu/6170_projects/mmiyachi_proj2/app/helpers/sessions_helper.rb:13: syntax error, unexpected '='
+    @current_storekeeper || = Storekeeper.find_by_remember...
+                             ^):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/sessions_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.8ms)
+
+
+Started GET "/storekeepersignin" for 127.0.0.1 at 2012-09-30 23:12:59 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."remember_token" IS NULL LIMIT 1[0m
+Completed 200 OK in 90ms (Views: 89.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 23:12:59 -0700
+Served asset /application.css - 304 Not Modified (28ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 23:12:59 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-30 23:12:59 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 23:12:59 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 23:12:59 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 23:12:59 -0700
+Served asset /custom.css - 304 Not Modified (26ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 23:12:59 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 23:12:59 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 23:12:59 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 23:12:59 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 23:12:59 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 23:12:59 -0700
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 23:12:59 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 23:12:59 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 23:12:59 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-30 23:12:59 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-09-30 23:13:06 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tM+x2yZB21jQ4/nrUWa3apa1fS5pRa5HsyKnYxpB7nA=", "session"=>{"email"=>"mmiyachi@mit.edu", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mStorekeeper Load (0.2ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."email" = 'mmiyachi@mit.edu' LIMIT 1
+Redirected to http://localhost:3000/storekeepers/1
+Completed 302 Found in 150ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/storekeepers/1" for 127.0.0.1 at 2012-09-30 23:13:06 -0700
+Processing by StorekeepersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStorekeeper Load (0.2ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered storekeepers/show.html.erb within layouts/application (0.9ms)
+  [1m[35mStorekeeper Load (0.2ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."remember_token" = '' LIMIT 1
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 23:13:06 -0700
+Served asset /application.css - 304 Not Modified (48ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 23:13:07 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 23:13:07 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 23:13:07 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 23:13:07 -0700
+Served asset /custom.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-30 23:13:07 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 23:13:07 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 23:13:07 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 23:13:07 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 23:13:07 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 23:13:07 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-30 23:13:07 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 23:13:07 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 23:13:07 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 23:13:07 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 23:13:07 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-30 23:13:12 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  [1m[36mStorekeeper Load (0.2ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."remember_token" = '' LIMIT 1[0m
+Completed 200 OK in 27ms (Views: 27.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 23:13:12 -0700
+Served asset /application.css - 304 Not Modified (43ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-30 23:13:13 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 23:13:13 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 23:13:13 -0700
+Served asset /custom.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 23:13:13 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 23:13:13 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 23:13:13 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 23:13:13 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 23:13:13 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 23:13:13 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 23:13:13 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-30 23:13:13 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 23:13:13 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 23:13:13 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 23:13:13 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 23:13:13 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/storekeepersignin" for 127.0.0.1 at 2012-09-30 23:15:20 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+  [1m[35mStorekeeper Load (0.1ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."remember_token" = '' LIMIT 1
+Completed 200 OK in 50ms (Views: 49.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 23:15:20 -0700
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 23:15:20 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 23:15:20 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 23:15:20 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 23:15:20 -0700
+Served asset /custom.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 23:15:20 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-30 23:15:20 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 23:15:20 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 23:15:20 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 23:15:20 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 23:15:20 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-30 23:15:20 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 23:15:20 -0700
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 23:15:20 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 23:15:20 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 23:15:20 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-09-30 23:15:28 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tM+x2yZB21jQ4/nrUWa3apa1fS5pRa5HsyKnYxpB7nA=", "session"=>{"email"=>"mmiyachi@mit.edu", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mStorekeeper Load (0.2ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."email" = 'mmiyachi@mit.edu' LIMIT 1[0m
+Redirected to http://localhost:3000/storekeepers/1
+Completed 302 Found in 94ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/storekeepers/1" for 127.0.0.1 at 2012-09-30 23:15:28 -0700
+Processing by StorekeepersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mStorekeeper Load (0.2ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered storekeepers/show.html.erb within layouts/application (0.5ms)
+  [1m[36mStorekeeper Load (0.2ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."remember_token" = '' LIMIT 1[0m
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 23:15:28 -0700
+Served asset /application.css - 304 Not Modified (26ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 23:15:28 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 23:15:28 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 23:15:28 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-30 23:15:28 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 23:15:28 -0700
+Served asset /custom.css - 304 Not Modified (31ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 23:15:28 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 23:15:28 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 23:15:28 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 23:15:28 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 23:15:28 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-30 23:15:28 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 23:15:28 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 23:15:28 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 23:15:28 -0700
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 23:15:28 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/storekeepers" for 127.0.0.1 at 2012-09-30 23:15:33 -0700
+Processing by StorekeepersController#index as HTML
+  [1m[35mStorekeeper Load (0.2ms)[0m  SELECT "storekeepers".* FROM "storekeepers" 
+  Rendered storekeepers/index.html.erb within layouts/application (1.2ms)
+  [1m[36mStorekeeper Load (0.2ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."remember_token" = '' LIMIT 1[0m
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 23:15:33 -0700
+Served asset /application.css - 304 Not Modified (38ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 23:15:33 -0700
+Served asset /custom.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 23:15:33 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 23:15:33 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 23:15:33 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-30 23:15:33 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 23:15:33 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 23:15:33 -0700
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 23:15:33 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 23:15:33 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-30 23:15:33 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 23:15:33 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 23:15:33 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 23:15:33 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 23:15:33 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 23:15:33 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateStorekeepers (20121001044908)
+Migrating to CreateStores (20121001045311)
+Migrating to CreateItems (20121001045412)
+Migrating to AddIndexToUsersEmail (20121001052659)
+Migrating to AddRememberTokenToStorekeepers (20121001060448)
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("items")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("storekeepers")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_storekeepers_on_remember_token')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_storekeepers_on_email')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("stores")
+Connecting to database specified by database.yml
+
+
+Started GET "/storekeepersignin" for 127.0.0.1 at 2012-09-30 23:19:29 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+  [1m[35mStorekeeper Load (0.1ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."remember_token" = '' LIMIT 1
+Completed 200 OK in 45ms (Views: 43.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:29 -0700
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:29 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:29 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:29 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:29 -0700
+Served asset /custom.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:29 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:29 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:29 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:29 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:29 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:29 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:29 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:29 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:29 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:29 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:29 -0700
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-30 23:19:31 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  [1m[36mStorekeeper Load (0.2ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."remember_token" = '' LIMIT 1[0m
+Completed 200 OK in 51ms (Views: 50.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:31 -0700
+Served asset /application.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:31 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:31 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:31 -0700
+Served asset /custom.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:31 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:31 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:31 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:31 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:31 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:31 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:31 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:31 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:31 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:31 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:31 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:31 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/storekeepers/new" for 127.0.0.1 at 2012-09-30 23:19:33 -0700
+Processing by StorekeepersController#new as HTML
+  Rendered storekeepers/new.html.erb within layouts/application (3.0ms)
+  [1m[35mStorekeeper Load (0.2ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."remember_token" = '' LIMIT 1
+Completed 200 OK in 29ms (Views: 20.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:33 -0700
+Served asset /application.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:33 -0700
+Served asset /custom.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:33 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:33 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:33 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:33 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:33 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:33 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:33 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:33 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:33 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:33 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:33 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:33 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:33 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:33 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/storekeepersignin" for 127.0.0.1 at 2012-09-30 23:19:34 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+  [1m[36mStorekeeper Load (0.2ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."remember_token" = '' LIMIT 1[0m
+Completed 200 OK in 27ms (Views: 27.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:35 -0700
+Served asset /application.css - 304 Not Modified (40ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:35 -0700
+Served asset /custom.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:35 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:35 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:35 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:35 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:35 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:35 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:35 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:35 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:35 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:35 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:35 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:35 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:35 -0700
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:35 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-09-30 23:19:43 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tM+x2yZB21jQ4/nrUWa3apa1fS5pRa5HsyKnYxpB7nA=", "session"=>{"email"=>"mari.a.miyachi@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mStorekeeper Load (0.2ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."email" = 'mari.a.miyachi@gmail.com' LIMIT 1
+Redirected to http://localhost:3000/storekeepers/2
+Completed 302 Found in 103ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/storekeepers/2" for 127.0.0.1 at 2012-09-30 23:19:43 -0700
+Processing by StorekeepersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStorekeeper Load (0.2ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered storekeepers/show.html.erb within layouts/application (0.5ms)
+  [1m[35mStorekeeper Load (0.1ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."remember_token" = '' LIMIT 1
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:44 -0700
+Served asset /application.css - 304 Not Modified (45ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:44 -0700
+Served asset /custom.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:44 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:44 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:44 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:44 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:44 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:44 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:44 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:44 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:44 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:44 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:44 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:44 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:44 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:44 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/storekeepers" for 127.0.0.1 at 2012-09-30 23:19:49 -0700
+Processing by StorekeepersController#index as HTML
+  [1m[36mStorekeeper Load (0.2ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" [0m
+  Rendered storekeepers/index.html.erb within layouts/application (1.5ms)
+  [1m[35mStorekeeper Load (0.2ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."remember_token" = '' LIMIT 1
+Completed 200 OK in 52ms (Views: 49.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:50 -0700
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:50 -0700
+Served asset /custom.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:50 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:50 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:50 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:50 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:50 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:50 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:50 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:50 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:50 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:50 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:50 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:50 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:50 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:50 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/storekeepers/2" for 127.0.0.1 at 2012-09-30 23:19:52 -0700
+Processing by StorekeepersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered storekeepers/show.html.erb within layouts/application (0.9ms)
+  [1m[35mStorekeeper Load (0.2ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."remember_token" = '' LIMIT 1
+Completed 200 OK in 47ms (Views: 45.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:52 -0700
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:52 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:52 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:52 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:52 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:52 -0700
+Served asset /custom.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:52 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:52 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 23:19:52 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:52 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:52 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:52 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:52 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:52 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:52 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 23:19:52 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-30 23:20:48 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  [1m[36mStorekeeper Load (0.2ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."remember_token" = '' LIMIT 1[0m
+Completed 200 OK in 51ms (Views: 50.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 23:20:48 -0700
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 23:20:48 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 23:20:48 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-30 23:20:48 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 23:20:48 -0700
+Served asset /custom.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 23:20:48 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 23:20:48 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 23:20:48 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 23:20:48 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 23:20:48 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 23:20:48 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-30 23:20:48 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 23:20:48 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 23:20:48 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 23:20:48 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 23:20:48 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/storekeepers/new" for 127.0.0.1 at 2012-09-30 23:20:49 -0700
+Processing by StorekeepersController#new as HTML
+  Rendered storekeepers/new.html.erb within layouts/application (33.4ms)
+  [1m[35mStorekeeper Load (0.2ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."remember_token" = '' LIMIT 1
+Completed 200 OK in 50ms (Views: 49.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 23:20:49 -0700
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-30 23:20:49 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 23:20:49 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 23:20:49 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 23:20:49 -0700
+Served asset /custom.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 23:20:49 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 23:20:49 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 23:20:49 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 23:20:49 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 23:20:49 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 23:20:49 -0700
+Served asset /storekeepers.css - 304 Not Modified (29ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 23:20:49 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-30 23:20:49 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 23:20:49 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 23:20:49 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 23:20:49 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/storekeepers" for 127.0.0.1 at 2012-09-30 23:21:01 -0700
+Processing by StorekeepersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tM+x2yZB21jQ4/nrUWa3apa1fS5pRa5HsyKnYxpB7nA=", "storekeeper"=>{"name"=>"Mari", "email"=>"mmiyachi@comcast.net", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Storekeeper Account"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mStorekeeper Exists (0.1ms)[0m  SELECT 1 AS one FROM "storekeepers" WHERE "storekeepers"."email" = 'mmiyachi@comcast.net' LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "storekeepers" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 01 Oct 2012 06:21:01 UTC +00:00], ["email", "mmiyachi@comcast.net"], ["name", "Mari"], ["password_digest", "$2a$10$GxWVk/6p43G8niwAwXyCoeczvZLXFaY2NUkxP0rrJFFSaFzRoZ9bK"], ["remember_token", "fwRqiZJkYJyICjO8ILBqvg"], ["updated_at", Mon, 01 Oct 2012 06:21:01 UTC +00:00]]
+  [1m[35m (13.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/storekeepers/3
+Completed 302 Found in 116ms (ActiveRecord: 14.1ms)
+
+
+Started GET "/storekeepers/3" for 127.0.0.1 at 2012-09-30 23:21:01 -0700
+Processing by StorekeepersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered storekeepers/show.html.erb within layouts/application (0.4ms)
+  [1m[35mStorekeeper Load (0.1ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."remember_token" = '' LIMIT 1
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 23:21:01 -0700
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-30 23:21:01 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 23:21:01 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 23:21:01 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 23:21:01 -0700
+Served asset /custom.css - 304 Not Modified (28ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 23:21:01 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 23:21:01 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 23:21:01 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 23:21:01 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 23:21:01 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 23:21:01 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 23:21:01 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 23:21:01 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-30 23:21:01 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 23:21:01 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 23:21:01 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/storekeepersignin" for 127.0.0.1 at 2012-09-30 23:22:11 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+  [1m[36mStorekeeper Load (0.2ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."remember_token" = '' LIMIT 1[0m
+Completed 200 OK in 31ms (Views: 31.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:11 -0700
+Served asset /application.css - 304 Not Modified (41ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:11 -0700
+Served asset /storekeepers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:11 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:11 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:11 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:11 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:11 -0700
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:11 -0700
+Served asset /custom.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:11 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:11 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:11 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:11 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:11 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:11 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:11 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:11 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-09-30 23:22:21 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tM+x2yZB21jQ4/nrUWa3apa1fS5pRa5HsyKnYxpB7nA=", "session"=>{"email"=>"mmiyachi@mit.edu", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mStorekeeper Load (2.2ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."email" = 'mmiyachi@mit.edu' LIMIT 1
+Redirected to http://localhost:3000/storekeepers/1
+Completed 302 Found in 105ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/storekeepers/1" for 127.0.0.1 at 2012-09-30 23:22:21 -0700
+Processing by StorekeepersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered storekeepers/show.html.erb within layouts/application (0.5ms)
+  [1m[35mStorekeeper Load (0.1ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."remember_token" = '-KnifdD_UdqMq6omagNvvA' LIMIT 1
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:21 -0700
+Served asset /application.css - 304 Not Modified (23ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:21 -0700
+Served asset /custom.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:21 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:21 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:21 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:21 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:21 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:21 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:21 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:21 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:21 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:21 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:21 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:21 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:21 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:21 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-30 23:22:32 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  [1m[36mStorekeeper Load (0.2ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."remember_token" = '-KnifdD_UdqMq6omagNvvA' LIMIT 1[0m
+Completed 200 OK in 40ms (Views: 39.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:32 -0700
+Served asset /application.css - 304 Not Modified (23ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:32 -0700
+Served asset /custom.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:32 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:32 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:32 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:32 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:32 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:32 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:32 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:32 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:32 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:32 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:32 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:32 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:32 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:32 -0700
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started DELETE "/storekeepersignout" for 127.0.0.1 at 2012-09-30 23:22:33 -0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tM+x2yZB21jQ4/nrUWa3apa1fS5pRa5HsyKnYxpB7nA="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-30 23:22:33 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.9ms)
+  [1m[35mStorekeeper Load (0.2ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."remember_token" IS NULL LIMIT 1
+Completed 200 OK in 39ms (Views: 39.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:34 -0700
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:34 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:34 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:34 -0700
+Served asset /custom.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:34 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:34 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:34 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:34 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:34 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:34 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:34 -0700
+Served asset /storekeepers.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:34 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:34 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:34 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:34 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:34 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/storekeepers/new" for 127.0.0.1 at 2012-09-30 23:22:45 -0700
+Processing by StorekeepersController#new as HTML
+  Rendered storekeepers/new.html.erb within layouts/application (2.1ms)
+  [1m[36mStorekeeper Load (0.2ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."remember_token" IS NULL LIMIT 1[0m
+Completed 200 OK in 52ms (Views: 51.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:46 -0700
+Served asset /application.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:46 -0700
+Served asset /custom.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:46 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:46 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:46 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:46 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:46 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:46 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:46 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:46 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:46 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:46 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:46 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:46 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:46 -0700
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:46 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started POST "/storekeepers" for 127.0.0.1 at 2012-09-30 23:22:55 -0700
+Processing by StorekeepersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tM+x2yZB21jQ4/nrUWa3apa1fS5pRa5HsyKnYxpB7nA=", "storekeeper"=>{"name"=>"Test", "email"=>"mm@test.g", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Storekeeper Account"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mStorekeeper Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "storekeepers" WHERE "storekeepers"."email" = 'mm@test.g' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered storekeepers/new.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 210ms (Views: 40.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:56 -0700
+Served asset /application.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:56 -0700
+Served asset /custom.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:56 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:56 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:56 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:56 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:56 -0700
+Served asset /stores.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 23:22:56 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:56 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:56 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:56 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:56 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:56 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:56 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:56 -0700
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 23:22:56 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started POST "/storekeepers" for 127.0.0.1 at 2012-09-30 23:23:04 -0700
+Processing by StorekeepersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tM+x2yZB21jQ4/nrUWa3apa1fS5pRa5HsyKnYxpB7nA=", "storekeeper"=>{"name"=>"Test", "email"=>"mm@test.g", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Storekeeper Account"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mStorekeeper Exists (0.1ms)[0m  SELECT 1 AS one FROM "storekeepers" WHERE "storekeepers"."email" = 'mm@test.g' LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (7.0ms)[0m  [1mINSERT INTO "storekeepers" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 01 Oct 2012 06:23:04 UTC +00:00], ["email", "mm@test.g"], ["name", "Test"], ["password_digest", "$2a$10$BrpdqCW6IIyFYX9PGdIBbO74GGcWcdN0M23plupnY3T4eiMh/NumS"], ["remember_token", "oAZiAlV3Dtu7tAVhW_mv0w"], ["updated_at", Mon, 01 Oct 2012 06:23:04 UTC +00:00]]
+  [1m[35m (15.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/storekeepers/4
+Completed 302 Found in 198ms (ActiveRecord: 23.0ms)
+
+
+Started GET "/storekeepers/4" for 127.0.0.1 at 2012-09-30 23:23:04 -0700
+Processing by StorekeepersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mStorekeeper Load (0.6ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  Rendered storekeepers/show.html.erb within layouts/application (0.5ms)
+  [1m[35mStorekeeper Load (0.1ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."remember_token" = '' LIMIT 1
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 23:23:04 -0700
+Served asset /application.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 23:23:04 -0700
+Served asset /custom.css - 304 Not Modified (26ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-30 23:23:04 -0700
+Served asset /sessions.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 23:23:05 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 23:23:05 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 23:23:05 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 23:23:05 -0700
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 23:23:05 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 23:23:05 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 23:23:05 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 23:23:05 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 23:23:05 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-30 23:23:05 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 23:23:05 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 23:23:05 -0700
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 23:23:05 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-30 23:28:05 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."remember_token" = '' LIMIT 1[0m
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:05 -0700
+Served asset /application.css - 304 Not Modified (26ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Served asset /custom.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/storekeepers/new" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Processing by StorekeepersController#new as HTML
+  Rendered storekeepers/new.html.erb within layouts/application (2.5ms)
+  [1m[35mStorekeeper Load (0.2ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."remember_token" = '' LIMIT 1
+Completed 200 OK in 47ms (Views: 37.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Served asset /application.css - 304 Not Modified (27ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Served asset /custom.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:06 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/storekeepers" for 127.0.0.1 at 2012-09-30 23:28:16 -0700
+Processing by StorekeepersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tM+x2yZB21jQ4/nrUWa3apa1fS5pRa5HsyKnYxpB7nA=", "storekeeper"=>{"name"=>"Test", "email"=>"t@t.t", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Storekeeper Account"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mStorekeeper Exists (0.1ms)[0m  SELECT 1 AS one FROM "storekeepers" WHERE "storekeepers"."email" = 't@t.t' LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "storekeepers" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 01 Oct 2012 06:28:16 UTC +00:00], ["email", "t@t.t"], ["name", "Test"], ["password_digest", "$2a$10$UQjDkxuCBuj4Z7mqJeNBMOk8/zS.pL0iWjKaWAo1sGSIA2d3jBFWi"], ["remember_token", "dCa0PvjYtrvL3ybmCfdGdQ"], ["updated_at", Mon, 01 Oct 2012 06:28:16 UTC +00:00]]
+  [1m[35m (36.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/storekeepers/5
+Completed 302 Found in 137ms (ActiveRecord: 36.7ms)
+
+
+Started GET "/storekeepers/5" for 127.0.0.1 at 2012-09-30 23:28:16 -0700
+Processing by StorekeepersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mStorekeeper Load (0.2ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  Rendered storekeepers/show.html.erb within layouts/application (21.2ms)
+  [1m[35mStorekeeper Load (0.2ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."remember_token" = 'dCa0PvjYtrvL3ybmCfdGdQ' LIMIT 1
+Completed 200 OK in 42ms (Views: 40.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:16 -0700
+Served asset /application.css - 304 Not Modified (27ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:16 -0700
+Served asset /custom.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:16 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:16 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:16 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:16 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:16 -0700
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:16 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:16 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:16 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:16 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:17 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:17 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:17 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:17 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:17 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/storekeepersignout" for 127.0.0.1 at 2012-09-30 23:28:21 -0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tM+x2yZB21jQ4/nrUWa3apa1fS5pRa5HsyKnYxpB7nA="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-30 23:28:21 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (5.8ms)
+  [1m[36mStorekeeper Load (0.2ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."remember_token" IS NULL LIMIT 1[0m
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:21 -0700
+Served asset /application.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:21 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:21 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:21 -0700
+Served asset /static_pages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:21 -0700
+Served asset /custom.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:21 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:21 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 23:28:21 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:21 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:21 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:21 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:21 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:21 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:21 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:21 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-30 23:28:21 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)

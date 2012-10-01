@@ -41,15 +41,11 @@ class StorekeepersController < ApplicationController
   # POST /storekeepers.json
   def create
     @storekeeper = Storekeeper.new(params[:storekeeper])
-
-    respond_to do |format|
-      if @storekeeper.save
-        format.html { redirect_to @storekeeper, notice: 'Storekeeper was successfully created.' }
-        format.json { render json: @storekeeper, status: :created, location: @storekeeper }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @storekeeper.errors, status: :unprocessable_entity }
-      end
+    if @storekeeper.save
+      sign_in @storekeeper
+      redirect_to @storekeeper
+    else
+      render 'new'
     end
   end
 

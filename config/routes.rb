@@ -4,8 +4,11 @@ MmiyachiProj2::Application.routes.draw do
   resources :items
   resources :stores
   resources :storekeepers
+  resources :sessions
 
   match '/storekeepersignup', to: 'storekeepers#new'
+  match '/storekeepersignin', to: 'sessions#new'
+  match '/storekeepersignout', to: 'sessions#destroy', via: :delete
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
