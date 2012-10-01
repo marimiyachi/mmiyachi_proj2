@@ -1344,3 +1344,84 @@ Served asset /stores.js - 304 Not Modified (0ms)
 
 Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 22:19:43 -0700
 Served asset /static_pages.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateStorekeepers (20121001044908)
+Migrating to CreateStores (20121001045311)
+Migrating to CreateItems (20121001045412)
+Migrating to AddIndexToUsersEmail (20121001052659)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("storekeepers")
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "index_storekeepers_on_email" ON "storekeepers" ("email")[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121001052659')
+  [1m[36m (38.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("items")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("storekeepers")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_storekeepers_on_email')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("stores")[0m
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-30 22:30:58 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 33ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-30 22:30:58 -0700
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-30 22:30:58 -0700
+Served asset /custom.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-09-30 22:30:58 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-09-30 22:30:58 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-30 22:30:58 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-30 22:30:58 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-30 22:30:58 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-30 22:30:58 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-30 22:30:58 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-30 22:30:58 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-30 22:30:58 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-09-30 22:30:58 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-09-30 22:30:58 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-30 22:30:58 -0700
+Served asset /application.js - 304 Not Modified (24ms)
