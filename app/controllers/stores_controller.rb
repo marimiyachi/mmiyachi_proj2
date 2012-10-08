@@ -40,7 +40,7 @@ class StoresController < ApplicationController
   # POST /stores
   # POST /stores.json
   def create
-    @store = Store.new(params[:store])
+    @store = current_storekeeper.stores.build(params[:store])
 
     respond_to do |format|
       if @store.save

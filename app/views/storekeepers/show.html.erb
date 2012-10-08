@@ -10,11 +10,13 @@
   <%= @storekeeper.email %>
 </p>
 
-<p>
-  <b>Password digest:</b>
-  <%= @storekeeper.password_digest %>
-</p>
-
 
 <%= link_to 'Edit', edit_storekeeper_path(@storekeeper) %> |
-<%= link_to 'Back', storekeepers_path %>
+<%= link_to 'New Store', new_store_path %>
+
+<div class="span8">
+  <% if @storekeeper.stores.any? %>
+  <h3> Stores (<%= @storekeeper.stores.count %>)</h3><br/>
+  <%= render @stores %>
+  <% end %>
+</div>
