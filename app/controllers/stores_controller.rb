@@ -22,6 +22,11 @@ class StoresController < ApplicationController
     end
   end
 
+  def shop
+    @store = Store.find(params[:id])
+    @items = @store.items
+  end
+
   # GET /stores/new
   # GET /stores/new.json
   def new

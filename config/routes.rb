@@ -10,6 +10,8 @@ MmiyachiProj2::Application.routes.draw do
   match '/storekeepersignin', to: 'sessions#new'
   match '/storekeepersignout', to: 'sessions#destroy', via: :delete
 
+  match 'stores/:id/shop' => 'stores#shop', :as => :shop
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

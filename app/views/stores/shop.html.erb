@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @store.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @store.description %>
+</p>
+
+
+<%= link_to 'Back', stores_path %>
+<% if @store.items.any? %>
+<h3>Items (<%= @store.items.count %>)</h3><br/>
+<table class="table table-striped table-bordered">
+  <tr>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Description</th>
+    <th></th>
+  </tr>
+  <% @items.each do |item| %>
+  <tr>
+    <td><%= item.name %></td>
+    <td><%= item.price %></td>
+    <td><%= item.description %></td>
+    <td><%= link_to 'Add to Basket', "#" %>
+  </tr>
+  <% end %>
+</table>
+<% end %>

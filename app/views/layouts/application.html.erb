@@ -18,6 +18,7 @@
             <li><%= link_to "Profile", current_storekeeper %></li>
             <li><%= link_to "Sign out", storekeepersignout_path, method: "delete" %>
             <% else %>
+            <li><%= link_to "Cart", "#" %></li>
             <li><%= link_to "Sign in", storekeepersignin_path %></li>
             <% end %>
           </ul>
