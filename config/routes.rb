@@ -1,4 +1,6 @@
 MmiyachiProj2::Application.routes.draw do
+  resources :carts
+
   root to: 'static_pages#home'
 
   resources :items
@@ -11,6 +13,7 @@ MmiyachiProj2::Application.routes.draw do
   match '/storekeepersignout', to: 'sessions#destroy', via: :delete
 
   match 'stores/:id/shop' => 'stores#shop', :as => :shop
+  match 'storekeepers/:id/cart' => 'carts#show', :as => :shopping_cart
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

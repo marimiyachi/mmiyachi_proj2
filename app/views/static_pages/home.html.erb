@@ -3,9 +3,9 @@
   <h1>Welcome to Mari's Shopping Cart Service</h1>
 
   <% if signed_in? %>
+  <%= link_to "Shop", stores_path, class: "btn btn-large btn-primary" %>
   <%= link_to "Sell", current_storekeeper, class: "btn btn-large btn-primary" %>
   <% else %>
-  <%= link_to "Shop", stores_path, class: "btn btn-large btn-primary" %>
-  <%= link_to "Sell", new_storekeeper_path, class: "btn btn-large btn-primary" %>
+  <%= link_to "Sign up", new_storekeeper_path, class: "btn btn-large btn-primary" %>
   <% end %>
 </div>

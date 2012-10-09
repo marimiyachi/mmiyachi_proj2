@@ -12,6 +12,7 @@ class Storekeeper < ActiveRecord::Base
   validates :password_confirmation, presence: true
 
   has_many :stores
+  has_many :carts
 
   private
     def create_remember_token

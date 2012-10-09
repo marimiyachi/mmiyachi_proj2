@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<h3>Shopping Cart</h3>
+
+<p>
+  <b>Storekeeper:</b>
+  <%= @cart.storekeeper_id %>
+</p>
+
+<% if @cart.items.any? %>
+  <% @cart.items.each do |item| %>
+    <%= item.name %> | <%= item.price %><br/>
+  <% end %>
+<% end %>
+
+<%= link_to 'Edit', edit_cart_path(@cart) %> |
+<%= link_to 'Back', carts_path %> |
+<%= link_to 'Checkout', "#" %>

@@ -12,7 +12,9 @@
 
 
 <%= link_to 'Edit', edit_storekeeper_path(@storekeeper) %> |
-<%= link_to 'New Store', new_store_path %>
+<%= link_to 'New Store', new_store_path %> |
+<%= link_to 'New Cart', new_cart_path %> |
+<%= link_to 'Recent Orders', "#" %>
 
 <div class="span8">
   <% if @storekeeper.stores.any? %>
