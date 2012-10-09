@@ -22,6 +22,10 @@ class StorekeepersController < ApplicationController
     end
   end
 
+  def order
+    @storekeeper = Storekeeper.find(params[:id])
+  end
+
   # GET /storekeepers/new
   # GET /storekeepers/new.json
   def new

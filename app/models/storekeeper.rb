@@ -13,6 +13,7 @@ class Storekeeper < ActiveRecord::Base
 
   has_many :stores
   has_many :carts
+  has_many :orders
 
   private
     def create_remember_token

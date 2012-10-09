@@ -1,0 +1,9 @@
+<h3>Recent Orders</h3>
+<% if @storekeeper.orders.any? %>
+<% @storekeeper.orders.each do |order| %>
+  Customer: <%= order.customer_id %>
+  <% order.order_its.each do |item| %>
+  Item Number: <%= item.item_number %><br/>
+  <% end %>
+<% end %>
+<% end %>

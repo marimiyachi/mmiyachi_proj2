@@ -37,6 +37,20 @@ class CartsController < ApplicationController
     @cart = Cart.find(params[:id])
   end
 
+  def checkout
+    @cart = Cart.find(params[:id])
+    @customer = current_storekeeper.id
+    @cart.cart_items.each do |item|
+    @store = Store.find_by_id(item.store_number)
+    @storekeeper = Storekeeper.find(@store.storekeeper_id)
+    @order = @storekeeper.orders.new()
+    @order.update_attributes(customer_id: @customer, id: @cart.id)
+    @item = @order.order_its.new()
+    @item.update_attributes(item_number: item.item_number)
+    item.destroy
+    end
+  end
+
   # POST /carts
   # POST /carts.json
   def create
