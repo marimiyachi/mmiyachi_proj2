@@ -30,6 +30,7 @@ class StorekeepersController < ApplicationController
   # GET /storekeepers/new.json
   def new
     @storekeeper = Storekeeper.new
+    @cart = Cart.new
 
     respond_to do |format|
       format.html # new.html.erb
@@ -46,6 +47,7 @@ class StorekeepersController < ApplicationController
   # POST /storekeepers.json
   def create
     @storekeeper = Storekeeper.new(params[:storekeeper])
+    @cart = @storekeeper.carts.build(params[:cart])
     if @storekeeper.save
       sign_in @storekeeper
       redirect_to @storekeeper
