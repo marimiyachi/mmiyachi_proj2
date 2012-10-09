@@ -25,6 +25,7 @@ class StoresController < ApplicationController
   def shop
     @store = Store.find(params[:id])
     @items = @store.items
+    @storekeeper = current_storekeeper
   end
 
   # GET /stores/new

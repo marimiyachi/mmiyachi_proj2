@@ -37,6 +37,25 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
   end
 
+  def basket
+    @item = Item.find(params[:id])
+    @current_storekeeper = current_storekeeper
+    @quantity = @item.quantity.to_i - 1
+    @id = @item.id
+    @store_id = @item.store_id
+    @item.update_attributes(quantity: @quantity)
+    @cart = Cart.find(params[:sid])
+    if @cart
+      @new_item = current_storekeeper.carts.first.cart_items.build()
+      @new_item.update_attributes(item_number: @id, store_number: @store_id)
+    end
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @cart }
+    end
+  end
+
   # POST /items
   # POST /items.json
   def create

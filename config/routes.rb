@@ -14,6 +14,7 @@ MmiyachiProj2::Application.routes.draw do
 
   match 'stores/:id/shop' => 'stores#shop', :as => :shop
   match 'storekeepers/:id/cart' => 'carts#show', :as => :shopping_cart
+  match 'storekeepers/:id/basket' => 'items#basket', :as => :basket
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

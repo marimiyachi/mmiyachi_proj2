@@ -7,9 +7,9 @@
   <%= @cart.storekeeper_id %>
 </p>
 
-<% if @cart.items.any? %>
-  <% @cart.items.each do |item| %>
-    <%= item.name %> | <%= item.price %><br/>
+<% if @cart.cart_items.any? %>
+  <% @cart.cart_items.each do |item| %>
+    Item ID: <%= item.item_number %> | Item's Store ID: <%= item.store_number %><br/>
   <% end %>
 <% end %>
 
