@@ -26,10 +26,8 @@
   <tr>
     <td></td>
     <td>Total: $<%= @t %></td>
-    <td></td>
+    <td><%= link_to 'Checkout', checkout_url(:id => @cart.id), class: "btn btn-primary" %></td>
     <td></td>
   </table>
 <% end %>
 
-<%= link_to 'Edit Cart', edit_cart_path(@cart) %> |
-<%= link_to 'Checkout', checkout_url(:id => @cart.id) %>

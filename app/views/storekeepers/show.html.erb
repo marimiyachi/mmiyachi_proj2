@@ -11,13 +11,13 @@
 </p>
 
 
-<%= link_to 'Edit', edit_storekeeper_path(@storekeeper) %> |
-<%= link_to 'New Store', new_store_path %> |
+<% if !current_storekeeper.store_exists %>
+<%= link_to 'New Store', new_store_path %> | 
+<% end %>
 <%= link_to 'Recent Orders', order_url(:id => @storekeeper.id) %>
+<br/><br/>
 
-<div class="span8">
   <% if @storekeeper.stores.any? %>
-  <h3> Stores (<%= @storekeeper.stores.count %>)</h3><br/>
+  <h3> Your Store </h3><br/>
   <%= render @stores %>
   <% end %>
-</div>

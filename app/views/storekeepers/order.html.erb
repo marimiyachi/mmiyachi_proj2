@@ -1,9 +1,12 @@
 <h3>Recent Orders</h3>
 <% if @storekeeper.orders.any? %>
 <% @storekeeper.orders.each do |order| %>
-  Customer: <%= order.customer_id %>
+  Order ID: <%= order.id %>
+  Customer: <%= order.customer_name %>
+  Email: <%= order.customer_email %>
   <% order.order_its.each do |item| %>
-  Item Number: <%= item.item_number %><br/>
+  Item Number: <%= item.item_number %>
+  Item Name: <%= item.item_name %><br/>
   <% end %>
 <% end %>
 <% end %>

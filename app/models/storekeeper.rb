@@ -15,6 +15,11 @@ class Storekeeper < ActiveRecord::Base
   has_many :carts
   has_many :orders
 
+  # returns a boolean true if a storekeeper has a store
+  def store_exists
+    return self.stores.count == 1
+  end
+
   private
     def create_remember_token
       self.remember_token = SecureRandom.urlsafe_base64

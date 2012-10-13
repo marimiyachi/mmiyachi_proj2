@@ -35,6 +35,7 @@ class ItemsController < ApplicationController
   # GET /items/1/edit
   def edit
     @item = Item.find(params[:id])
+    @store = Store.find_by_id(@item.store_id)
   end
 
   def basket
