@@ -24,7 +24,7 @@
     <th>Description</th>
     <th></th>
   </tr>
-  <% @items.each do |item| %>
+  <% @items.each do |item| %><% if item.quantity != 0.to_i %>
   <tr>
     <td><%= item.name %></td>
     <td><%= item.price %></td>
@@ -32,6 +32,6 @@
     <td><%= item.description %></td>
     <td><%= link_to 'Add to Basket', basket_url(:id => item.id, :sid => @current_storekeeper.id) %>
   </tr>
-  <% end %>
+  <% end %><% end %>
 </table>
 <% end %>

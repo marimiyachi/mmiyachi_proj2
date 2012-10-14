@@ -7,12 +7,14 @@
   <th>Customer Info</th>
   <th>Item Info</th>
 </tr>
-<% @storekeeper.orders.each do |order| %>
+<% @orders.each do |order| %>
   <tr>
     <td><%= order.id %></td>
     <td><%= order.customer_name %>, <%= order.customer_email %></td>
     <td><% order.order_its.each do |item| %>
+      <% if Item.find_by_id(item.item_number).store_id == Store.find_by_storekeeper_id(@storekeeper.id).id %>
       [<%= item.item_number %>] <%= item.item_name %> <br/>
+      <% end %>
   <% end %></td>
   </tr>
 <% end %>

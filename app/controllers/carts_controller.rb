@@ -40,12 +40,14 @@ class CartsController < ApplicationController
 
   def checkout
     @cart = Cart.find(params[:id])
-    @customer = current_storekeeper.id
+    @customer = current_storekeeper
+    @order = @customer.orders.new()
+    @order.update_attributes(customer_id: @customer.id, id: @cart.id)
     @cart.cart_items.each do |item|
-    @store = Store.find_by_id(item.store_number)
-    @storekeeper = Storekeeper.find(@store.storekeeper_id)
-    @order = @storekeeper.orders.new()
-    @order.update_attributes(customer_id: @customer, id: @cart.id)
+#@store = Store.find_by_id(item.store_number)
+#   @storekeeper = Storekeeper.find(@store.storekeeper_id)
+#   @order = @storekeeper.orders.new()
+#   @order.update_attributes(customer_id: @customer, id: @cart.id)
     @item = @order.order_its.new()
     @item.update_attributes(item_number: item.item_number)
     item.destroy
