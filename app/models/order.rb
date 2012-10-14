@@ -18,7 +18,7 @@ class Order < ActiveRecord::Base
   # returns array of items belonging to storekeeper
   def contains_items_from(storekeeper)
     self.order_its.each do |item|
-      if Item.find_by_id(item.item_number).store_id == Store.find_by_storekeeper_id(storekeeper.id).id
+      if Item.find_by_id(item.item_number).store_id == storekeeper.stores.first.id
         return true
       end
     end

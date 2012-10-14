@@ -1,4 +1,7 @@
 class StorekeepersController < ApplicationController
+  before_filter :signed_in_user
+  before_filter :correct_user
+
   # GET /storekeepers
   # GET /storekeepers.json
   def index
@@ -84,4 +87,16 @@ class StorekeepersController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  # Authenticate users
+  private
+    # redirect if user is not logged in
+    def signed_in_user
+      redirect_to storekeepersignin_path, notice: "Please sign in." unless signed_in?
+    end
+
+    # redirect if user is accessing material they don't own
+    def correct_user
+      redirect_to root_path, notice: "Restricted access." unless current_storekeeper?(Storekeeper.find(params[:id]))
+    end
 end
