@@ -61950,3 +61950,905 @@ Served asset /stores.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-14 13:06:05 -0700
 Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/storekeepers/8/order" for 127.0.0.1 at 2012-10-14 15:01:50 -0700
+Processing by StorekeepersController#order as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mStorekeeper Load (0.1ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" [0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "orders" WHERE "orders"."storekeeper_id" = 8
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."remember_token" = '7eP4uOgT9ymQJNt-HV33JA' LIMIT 1[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 1
+  Rendered storekeepers/order.html.erb within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 26ms
+
+ActionView::Template::Error (uninitialized constant Order::False):
+    8:   <th>Item Info</th>
+    9: </tr>
+    10: <% @orders.each do |order| %>
+    11:   <% if !order.contains_items_from(current_storekeeper) %>
+    12:   <tr>
+    13:     <td><%= order.id %></td>
+    14:     <td><%= order.customer_name %>, <%= order.customer_email %></td>
+  app/models/order.rb:27:in `contains_items_from'
+  app/views/storekeepers/order.html.erb:11:in `block in _app_views_storekeepers_order_html_erb__896291952__614099158'
+  app/views/storekeepers/order.html.erb:10:in `each'
+  app/views/storekeepers/order.html.erb:10:in `_app_views_storekeepers_order_html_erb__896291952__614099158'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.6ms)
+
+
+Started GET "/storekeepers/8/order" for 127.0.0.1 at 2012-10-14 15:02:18 -0700
+Processing by StorekeepersController#order as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE "orders"."storekeeper_id" = 8[0m
+  [1m[35mStorekeeper Load (0.1ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."remember_token" = '7eP4uOgT9ymQJNt-HV33JA' LIMIT 1
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 1[0m
+  Rendered storekeepers/order.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (uninitialized constant Order::False):
+    8:   <th>Item Info</th>
+    9: </tr>
+    10: <% @orders.each do |order| %>
+    11:   <% if order.contains_items_from(current_storekeeper) %>
+    12:   <% else %>
+    13:   <tr>
+    14:     <td><%= order.id %></td>
+  app/models/order.rb:27:in `contains_items_from'
+  app/views/storekeepers/order.html.erb:11:in `block in _app_views_storekeepers_order_html_erb__896291952__618920528'
+  app/views/storekeepers/order.html.erb:10:in `each'
+  app/views/storekeepers/order.html.erb:10:in `_app_views_storekeepers_order_html_erb__896291952__618920528'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.7ms)
+
+
+Started GET "/storekeepers/8/order" for 127.0.0.1 at 2012-10-14 15:03:38 -0700
+Processing by StorekeepersController#order as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mStorekeeper Load (0.2ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "orders" WHERE "orders"."storekeeper_id" = 8
+  [1m[36mStorekeeper Load (3.6ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."remember_token" = '7eP4uOgT9ymQJNt-HV33JA' LIMIT 1[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 1
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 2[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 1 LIMIT 1
+  Rendered storekeepers/order.html.erb within layouts/application (50.6ms)
+Completed 500 Internal Server Error in 68ms
+
+ActionView::Template::Error (undefined local variable or method `current_storekeeper' for #<Order:0x9d8e920>):
+    8:   <th>Item Info</th>
+    9: </tr>
+    10: <% @orders.each do |order| %>
+    11:   <% if order.contains_items_from(current_storekeeper) == [] %>
+    12:   <% else %>
+    13:   <tr>
+    14:     <td><%= order.id %></td>
+  app/models/order.rb:22:in `block in contains_items_from'
+  app/models/order.rb:21:in `contains_items_from'
+  app/views/storekeepers/order.html.erb:11:in `block in _app_views_storekeepers_order_html_erb__896291952_82149320'
+  app/views/storekeepers/order.html.erb:10:in `each'
+  app/views/storekeepers/order.html.erb:10:in `_app_views_storekeepers_order_html_erb__896291952_82149320'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.5ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.6ms)
+
+
+Started GET "/storekeepers/8/order" for 127.0.0.1 at 2012-10-14 15:04:02 -0700
+Processing by StorekeepersController#order as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE "orders"."storekeeper_id" = 8[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 1
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 2[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 1 LIMIT 1
+  Rendered storekeepers/order.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined local variable or method `current_storekeeper' for #<Order:0xb6270ea0>):
+    8:   <th>Item Info</th>
+    9: </tr>
+    10: <% @orders.each do |order| %>
+    11:   <% if order.contains_items_from(@storekeeper) == [] %>
+    12:   <% else %>
+    13:   <tr>
+    14:     <td><%= order.id %></td>
+  app/models/order.rb:22:in `block in contains_items_from'
+  app/models/order.rb:21:in `contains_items_from'
+  app/views/storekeepers/order.html.erb:11:in `block in _app_views_storekeepers_order_html_erb__896291952__619580618'
+  app/views/storekeepers/order.html.erb:10:in `each'
+  app/views/storekeepers/order.html.erb:10:in `_app_views_storekeepers_order_html_erb__896291952__619580618'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.9ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.9ms)
+
+
+Started GET "/storekeepers/8/order" for 127.0.0.1 at 2012-10-14 15:04:07 -0700
+Processing by StorekeepersController#order as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35mOrder Load (0.1ms)[0m  SELECT "orders".* FROM "orders" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE "orders"."storekeeper_id" = 8[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 1
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 2[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 1 LIMIT 1
+  Rendered storekeepers/order.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined local variable or method `current_storekeeper' for #<Order:0xb5f00aa4>):
+    8:   <th>Item Info</th>
+    9: </tr>
+    10: <% @orders.each do |order| %>
+    11:   <% if order.contains_items_from(@storekeeper) == [] %>
+    12:   <% else %>
+    13:   <tr>
+    14:     <td><%= order.id %></td>
+  app/models/order.rb:22:in `block in contains_items_from'
+  app/models/order.rb:21:in `contains_items_from'
+  app/views/storekeepers/order.html.erb:11:in `block in _app_views_storekeepers_order_html_erb__896291952__619580618'
+  app/views/storekeepers/order.html.erb:10:in `each'
+  app/views/storekeepers/order.html.erb:10:in `_app_views_storekeepers_order_html_erb__896291952__619580618'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.1ms)
+
+
+Started GET "/storekeepers/8/order" for 127.0.0.1 at 2012-10-14 15:04:08 -0700
+Processing by StorekeepersController#order as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35mOrder Load (0.1ms)[0m  SELECT "orders".* FROM "orders" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE "orders"."storekeeper_id" = 8[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 1
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 2[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 1 LIMIT 1
+  Rendered storekeepers/order.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined local variable or method `current_storekeeper' for #<Order:0xb4fbd394>):
+    8:   <th>Item Info</th>
+    9: </tr>
+    10: <% @orders.each do |order| %>
+    11:   <% if order.contains_items_from(@storekeeper) == [] %>
+    12:   <% else %>
+    13:   <tr>
+    14:     <td><%= order.id %></td>
+  app/models/order.rb:22:in `block in contains_items_from'
+  app/models/order.rb:21:in `contains_items_from'
+  app/views/storekeepers/order.html.erb:11:in `block in _app_views_storekeepers_order_html_erb__896291952__619580618'
+  app/views/storekeepers/order.html.erb:10:in `each'
+  app/views/storekeepers/order.html.erb:10:in `_app_views_storekeepers_order_html_erb__896291952__619580618'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.1ms)
+
+
+Started GET "/storekeepers/8/order" for 127.0.0.1 at 2012-10-14 15:04:09 -0700
+Processing by StorekeepersController#order as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35mOrder Load (0.1ms)[0m  SELECT "orders".* FROM "orders" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE "orders"."storekeeper_id" = 8[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 1
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 2[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 1 LIMIT 1
+  Rendered storekeepers/order.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined local variable or method `current_storekeeper' for #<Order:0xb4d3abd0>):
+    8:   <th>Item Info</th>
+    9: </tr>
+    10: <% @orders.each do |order| %>
+    11:   <% if order.contains_items_from(@storekeeper) == [] %>
+    12:   <% else %>
+    13:   <tr>
+    14:     <td><%= order.id %></td>
+  app/models/order.rb:22:in `block in contains_items_from'
+  app/models/order.rb:21:in `contains_items_from'
+  app/views/storekeepers/order.html.erb:11:in `block in _app_views_storekeepers_order_html_erb__896291952__619580618'
+  app/views/storekeepers/order.html.erb:10:in `each'
+  app/views/storekeepers/order.html.erb:10:in `_app_views_storekeepers_order_html_erb__896291952__619580618'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.7ms)
+
+
+Started GET "/storekeepers/8/order" for 127.0.0.1 at 2012-10-14 15:04:09 -0700
+Processing by StorekeepersController#order as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE "orders"."storekeeper_id" = 8[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 1
+  [1m[36mOrderIt Load (1.5ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 2[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 1 LIMIT 1
+  Rendered storekeepers/order.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined local variable or method `current_storekeeper' for #<Order:0x96be208>):
+    8:   <th>Item Info</th>
+    9: </tr>
+    10: <% @orders.each do |order| %>
+    11:   <% if order.contains_items_from(@storekeeper) == [] %>
+    12:   <% else %>
+    13:   <tr>
+    14:     <td><%= order.id %></td>
+  app/models/order.rb:22:in `block in contains_items_from'
+  app/models/order.rb:21:in `contains_items_from'
+  app/views/storekeepers/order.html.erb:11:in `block in _app_views_storekeepers_order_html_erb__896291952__619580618'
+  app/views/storekeepers/order.html.erb:10:in `each'
+  app/views/storekeepers/order.html.erb:10:in `_app_views_storekeepers_order_html_erb__896291952__619580618'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.5ms)
+
+
+Started GET "/storekeepers/8/order" for 127.0.0.1 at 2012-10-14 15:04:10 -0700
+Processing by StorekeepersController#order as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE "orders"."storekeeper_id" = 8[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 1
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 2[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 1 LIMIT 1
+  Rendered storekeepers/order.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined local variable or method `current_storekeeper' for #<Order:0xb6cf61a4>):
+    8:   <th>Item Info</th>
+    9: </tr>
+    10: <% @orders.each do |order| %>
+    11:   <% if order.contains_items_from(@storekeeper) == [] %>
+    12:   <% else %>
+    13:   <tr>
+    14:     <td><%= order.id %></td>
+  app/models/order.rb:22:in `block in contains_items_from'
+  app/models/order.rb:21:in `contains_items_from'
+  app/views/storekeepers/order.html.erb:11:in `block in _app_views_storekeepers_order_html_erb__896291952__619580618'
+  app/views/storekeepers/order.html.erb:10:in `each'
+  app/views/storekeepers/order.html.erb:10:in `_app_views_storekeepers_order_html_erb__896291952__619580618'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.6ms)
+
+
+Started GET "/storekeepers/8/order" for 127.0.0.1 at 2012-10-14 15:04:41 -0700
+Processing by StorekeepersController#order as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35mOrder Load (0.1ms)[0m  SELECT "orders".* FROM "orders" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE "orders"."storekeeper_id" = 8[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 1
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 2[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 1 LIMIT 1
+  [1m[36mStore Load (0.1ms)[0m  [1mSELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 3
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 4[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 5
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  [1m[36mOrderIt Load (0.0ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 6[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 7
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 8[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 9
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 10[0m
+  [1m[35mItem Load (0.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1[0m
+  Rendered storekeepers/order.html.erb within layouts/application (36.3ms)
+Completed 500 Internal Server Error in 53ms
+
+ActionView::Template::Error (can't convert OrderIt to Array (OrderIt#to_ary gives NilClass)):
+    8:   <th>Item Info</th>
+    9: </tr>
+    10: <% @orders.each do |order| %>
+    11:   <% if order.contains_items_from(@storekeeper) == [] %>
+    12:   <% else %>
+    13:   <tr>
+    14:     <td><%= order.id %></td>
+  app/models/order.rb:23:in `block in contains_items_from'
+  app/models/order.rb:21:in `contains_items_from'
+  app/views/storekeepers/order.html.erb:11:in `block in _app_views_storekeepers_order_html_erb__896291952__619580618'
+  app/views/storekeepers/order.html.erb:10:in `each'
+  app/views/storekeepers/order.html.erb:10:in `_app_views_storekeepers_order_html_erb__896291952__619580618'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.3ms)
+
+
+Started GET "/storekeepers/8/order" for 127.0.0.1 at 2012-10-14 15:06:19 -0700
+Processing by StorekeepersController#order as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mStorekeeper Load (0.1ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders" [0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "orders" WHERE "orders"."storekeeper_id" = 8
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 1[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 2
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 1 LIMIT 1[0m
+  [1m[35mStore Load (0.1ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 3[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 4
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 5[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 6
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 7[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 8
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 9[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1[0m
+  [1m[35mOrderIt Load (0.0ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 10
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  Rendered storekeepers/order.html.erb within layouts/application (17.7ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (can't convert OrderIt to Array (OrderIt#to_ary gives NilClass)):
+    8:   <th>Item Info</th>
+    9: </tr>
+    10: <% @orders.each do |order| %>
+    11:   <% if order.contains_items_from(@storekeeper).any? %>
+    12:   <tr>
+    13:     <td><%= order.id %></td>
+    14:     <td><%= order.customer_name %>, <%= order.customer_email %></td>
+  app/models/order.rb:23:in `block in contains_items_from'
+  app/models/order.rb:21:in `contains_items_from'
+  app/views/storekeepers/order.html.erb:11:in `block in _app_views_storekeepers_order_html_erb__896291952__613962528'
+  app/views/storekeepers/order.html.erb:10:in `each'
+  app/views/storekeepers/order.html.erb:10:in `_app_views_storekeepers_order_html_erb__896291952__613962528'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.9ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.4ms)
+
+
+Started GET "/storekeepers/8/order" for 127.0.0.1 at 2012-10-14 15:06:21 -0700
+Processing by StorekeepersController#order as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35mOrder Load (0.1ms)[0m  SELECT "orders".* FROM "orders" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE "orders"."storekeeper_id" = 8[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 1
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 2[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 1 LIMIT 1
+  [1m[36mStore Load (0.1ms)[0m  [1mSELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 3
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 4[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 5
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 6[0m
+  [1m[35mItem Load (0.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 7
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 8[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 9
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 10[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1[0m
+  Rendered storekeepers/order.html.erb within layouts/application (17.6ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (can't convert OrderIt to Array (OrderIt#to_ary gives NilClass)):
+    8:   <th>Item Info</th>
+    9: </tr>
+    10: <% @orders.each do |order| %>
+    11:   <% if order.contains_items_from(@storekeeper).any? %>
+    12:   <tr>
+    13:     <td><%= order.id %></td>
+    14:     <td><%= order.customer_name %>, <%= order.customer_email %></td>
+  app/models/order.rb:23:in `block in contains_items_from'
+  app/models/order.rb:21:in `contains_items_from'
+  app/views/storekeepers/order.html.erb:11:in `block in _app_views_storekeepers_order_html_erb__896291952__613962528'
+  app/views/storekeepers/order.html.erb:10:in `each'
+  app/views/storekeepers/order.html.erb:10:in `_app_views_storekeepers_order_html_erb__896291952__613962528'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.6ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.1ms)
+
+
+Started GET "/storekeepers/8/order" for 127.0.0.1 at 2012-10-14 15:06:22 -0700
+Processing by StorekeepersController#order as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mStorekeeper Load (0.1ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders" [0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "orders" WHERE "orders"."storekeeper_id" = 8
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 1[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 2
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 1 LIMIT 1[0m
+  [1m[35mStore Load (0.1ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 3[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 4
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 5[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 6
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 7[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1[0m
+  [1m[35mOrderIt Load (4.3ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 8
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 9[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 10
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  Rendered storekeepers/order.html.erb within layouts/application (17.3ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (can't convert OrderIt to Array (OrderIt#to_ary gives NilClass)):
+    8:   <th>Item Info</th>
+    9: </tr>
+    10: <% @orders.each do |order| %>
+    11:   <% if order.contains_items_from(@storekeeper).any? %>
+    12:   <tr>
+    13:     <td><%= order.id %></td>
+    14:     <td><%= order.customer_name %>, <%= order.customer_email %></td>
+  app/models/order.rb:23:in `block in contains_items_from'
+  app/models/order.rb:21:in `contains_items_from'
+  app/views/storekeepers/order.html.erb:11:in `block in _app_views_storekeepers_order_html_erb__896291952__613962528'
+  app/views/storekeepers/order.html.erb:10:in `each'
+  app/views/storekeepers/order.html.erb:10:in `_app_views_storekeepers_order_html_erb__896291952__613962528'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.2ms)
+
+
+Started GET "/storekeepers/8/order" for 127.0.0.1 at 2012-10-14 15:07:13 -0700
+Processing by StorekeepersController#order as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE "orders"."storekeeper_id" = 8[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 1
+  Rendered storekeepers/order.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (uninitialized constant Order::False):
+    8:   <th>Item Info</th>
+    9: </tr>
+    10: <% @orders.each do |order| %>
+    11:   <% if order.contains_items_from(@storekeeper) %>
+    12:   <tr>
+    13:     <td><%= order.id %></td>
+    14:     <td><%= order.customer_name %>, <%= order.customer_email %></td>
+  app/models/order.rb:26:in `contains_items_from'
+  app/views/storekeepers/order.html.erb:11:in `block in _app_views_storekeepers_order_html_erb__896291952_76958450'
+  app/views/storekeepers/order.html.erb:10:in `each'
+  app/views/storekeepers/order.html.erb:10:in `_app_views_storekeepers_order_html_erb__896291952_76958450'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.4ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (35.5ms)
+
+
+Started GET "/storekeepers/8/order" for 127.0.0.1 at 2012-10-14 15:07:52 -0700
+Processing by StorekeepersController#order as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35mOrder Load (0.1ms)[0m  SELECT "orders".* FROM "orders" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE "orders"."storekeeper_id" = 8[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 1
+  Rendered storekeepers/order.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (uninitialized constant Order::False):
+    8:   <th>Item Info</th>
+    9: </tr>
+    10: <% @orders.each do |order| %>
+    11:   <% if order.contains_items_from(@storekeeper) %>
+    12:   <tr>
+    13:     <td><%= order.id %></td>
+    14:     <td><%= order.customer_name %>, <%= order.customer_email %></td>
+  app/models/order.rb:26:in `contains_items_from'
+  app/views/storekeepers/order.html.erb:11:in `block in _app_views_storekeepers_order_html_erb__896291952__614079198'
+  app/views/storekeepers/order.html.erb:10:in `each'
+  app/views/storekeepers/order.html.erb:10:in `_app_views_storekeepers_order_html_erb__896291952__614079198'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.3ms)
+
+
+Started GET "/storekeepers/8/order" for 127.0.0.1 at 2012-10-14 15:08:26 -0700
+Processing by StorekeepersController#order as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35mOrder Load (0.1ms)[0m  SELECT "orders".* FROM "orders" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE "orders"."storekeeper_id" = 8[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 1
+  Rendered storekeepers/order.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (uninitialized constant Order::False):
+    8:   <th>Item Info</th>
+    9: </tr>
+    10: <% @orders.each do |order| %>
+    11:   <% if order.contains_items_from(@storekeeper) %>
+    12:   <tr>
+    13:     <td><%= order.id %></td>
+    14:     <td><%= order.customer_name %>, <%= order.customer_email %></td>
+  app/models/order.rb:25:in `contains_items_from'
+  app/views/storekeepers/order.html.erb:11:in `block in _app_views_storekeepers_order_html_erb__896291952__614079198'
+  app/views/storekeepers/order.html.erb:10:in `each'
+  app/views/storekeepers/order.html.erb:10:in `_app_views_storekeepers_order_html_erb__896291952__614079198'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.3ms)
+
+
+Started GET "/storekeepers/8/order" for 127.0.0.1 at 2012-10-14 15:08:27 -0700
+Processing by StorekeepersController#order as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE "orders"."storekeeper_id" = 8[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 1
+  Rendered storekeepers/order.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (uninitialized constant Order::False):
+    8:   <th>Item Info</th>
+    9: </tr>
+    10: <% @orders.each do |order| %>
+    11:   <% if order.contains_items_from(@storekeeper) %>
+    12:   <tr>
+    13:     <td><%= order.id %></td>
+    14:     <td><%= order.customer_name %>, <%= order.customer_email %></td>
+  app/models/order.rb:25:in `contains_items_from'
+  app/views/storekeepers/order.html.erb:11:in `block in _app_views_storekeepers_order_html_erb__896291952__614079198'
+  app/views/storekeepers/order.html.erb:10:in `each'
+  app/views/storekeepers/order.html.erb:10:in `_app_views_storekeepers_order_html_erb__896291952__614079198'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.3ms)
+
+
+Started GET "/storekeepers/8/order" for 127.0.0.1 at 2012-10-14 15:14:17 -0700
+Processing by StorekeepersController#order as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35mOrder Load (0.1ms)[0m  SELECT "orders".* FROM "orders" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE "orders"."storekeeper_id" = 8[0m
+  Rendered storekeepers/order.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined method `contains_items_from' for #<Order:0xb629c870>):
+    8:   <th>Item Info</th>
+    9: </tr>
+    10: <% @orders.each do |order| %>
+    11:   <% if order.contains_items_from(@storekeeper) %>
+    12:   <tr>
+    13:     <td><%= order.id %></td>
+    14:     <td><%= order.customer_name %>, <%= order.customer_email %></td>
+  app/views/storekeepers/order.html.erb:11:in `block in _app_views_storekeepers_order_html_erb__896291952__614079198'
+  app/views/storekeepers/order.html.erb:10:in `each'
+  app/views/storekeepers/order.html.erb:10:in `_app_views_storekeepers_order_html_erb__896291952__614079198'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.9ms)
+
+
+Started GET "/storekeepers/8/order" for 127.0.0.1 at 2012-10-14 15:14:33 -0700
+Processing by StorekeepersController#order as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mStorekeeper Load (0.1ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" [0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "orders" WHERE "orders"."storekeeper_id" = 8
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 1[0m
+  Rendered storekeepers/order.html.erb within layouts/application (30.0ms)
+Completed 500 Internal Server Error in 46ms
+
+ActionView::Template::Error (uninitialized constant Order::False):
+    8:   <th>Item Info</th>
+    9: </tr>
+    10: <% @orders.each do |order| %>
+    11:   <% if order.contains_items_from(@storekeeper) %>
+    12:   <tr>
+    13:     <td><%= order.id %></td>
+    14:     <td><%= order.customer_name %>, <%= order.customer_email %></td>
+  app/models/order.rb:25:in `contains_items_from'
+  app/views/storekeepers/order.html.erb:11:in `block in _app_views_storekeepers_order_html_erb__896291952__614079198'
+  app/views/storekeepers/order.html.erb:10:in `each'
+  app/views/storekeepers/order.html.erb:10:in `_app_views_storekeepers_order_html_erb__896291952__614079198'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.7ms)
+
+
+Started GET "/storekeepers/8/order" for 127.0.0.1 at 2012-10-14 15:14:59 -0700
+Processing by StorekeepersController#order as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mStorekeeper Load (0.1ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" [0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "orders" WHERE "orders"."storekeeper_id" = 8
+  Rendered storekeepers/order.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (uninitialized constant Order::True):
+    8:   <th>Item Info</th>
+    9: </tr>
+    10: <% @orders.each do |order| %>
+    11:   <% if order.contains_items_from(@storekeeper) %>
+    12:   <tr>
+    13:     <td><%= order.id %></td>
+    14:     <td><%= order.customer_name %>, <%= order.customer_email %></td>
+  app/models/order.rb:20:in `contains_items_from'
+  app/views/storekeepers/order.html.erb:11:in `block in _app_views_storekeepers_order_html_erb__896291952__614079198'
+  app/views/storekeepers/order.html.erb:10:in `each'
+  app/views/storekeepers/order.html.erb:10:in `_app_views_storekeepers_order_html_erb__896291952__614079198'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.2ms)
+
+
+Started GET "/storekeepers/8/order" for 127.0.0.1 at 2012-10-14 15:15:00 -0700
+Processing by StorekeepersController#order as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35mOrder Load (1.9ms)[0m  SELECT "orders".* FROM "orders" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE "orders"."storekeeper_id" = 8[0m
+  Rendered storekeepers/order.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (uninitialized constant Order::True):
+    8:   <th>Item Info</th>
+    9: </tr>
+    10: <% @orders.each do |order| %>
+    11:   <% if order.contains_items_from(@storekeeper) %>
+    12:   <tr>
+    13:     <td><%= order.id %></td>
+    14:     <td><%= order.customer_name %>, <%= order.customer_email %></td>
+  app/models/order.rb:20:in `contains_items_from'
+  app/views/storekeepers/order.html.erb:11:in `block in _app_views_storekeepers_order_html_erb__896291952__614079198'
+  app/views/storekeepers/order.html.erb:10:in `each'
+  app/views/storekeepers/order.html.erb:10:in `_app_views_storekeepers_order_html_erb__896291952__614079198'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.5ms)
+
+
+Started GET "/storekeepers/8/order" for 127.0.0.1 at 2012-10-14 15:15:30 -0700
+Processing by StorekeepersController#order as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mStorekeeper Load (0.1ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders" [0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "orders" WHERE "orders"."storekeeper_id" = 8
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 1[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 2
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 1 LIMIT 1[0m
+  [1m[35mStore Load (0.1ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 3[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 4
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 5[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 6
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 7[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 8
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  [1m[36mOrderIt Load (0.0ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 9[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 10
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = 8 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 6 LIMIT 1[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 11
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = 8 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 6 LIMIT 1[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 12
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = 8 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 7 LIMIT 1[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 13
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = 8 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 6 LIMIT 1[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 14
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  [1m[36mOrderIt Load (0.1ms)[0m  [1mSELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 15[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 16
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = 8 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 8 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 6 LIMIT 1
+  Rendered storekeepers/order.html.erb within layouts/application (49.3ms)
+  [1m[36mStorekeeper Load (0.2ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."remember_token" = '7eP4uOgT9ymQJNt-HV33JA' LIMIT 1[0m
+Completed 200 OK in 107ms (Views: 90.9ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-14 15:15:30 -0700
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2012-10-14 15:15:30 -0700
+Served asset /carts.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-10-14 15:15:30 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-10-14 15:15:30 -0700
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-10-14 15:15:30 -0700
+Served asset /custom.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-14 15:15:30 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-10-14 15:15:30 -0700
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.css?body=1" for 127.0.0.1 at 2012-10-14 15:15:30 -0700
+Served asset /storekeepers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2012-10-14 15:15:30 -0700
+Served asset /stores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-14 15:15:30 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-14 15:15:30 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-10-14 15:15:30 -0700
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2012-10-14 15:15:30 -0700
+Served asset /carts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-14 15:15:30 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storekeepers.js?body=1" for 127.0.0.1 at 2012-10-14 15:15:30 -0700
+Served asset /storekeepers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-10-14 15:15:30 -0700
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2012-10-14 15:15:30 -0700
+Served asset /stores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-14 15:15:30 -0700
+Served asset /application.js - 304 Not Modified (1ms)

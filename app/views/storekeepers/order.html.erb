@@ -8,6 +8,7 @@
   <th>Item Info</th>
 </tr>
 <% @orders.each do |order| %>
+  <% if order.contains_items_from(@storekeeper) %>
   <tr>
     <td><%= order.id %></td>
     <td><%= order.customer_name %>, <%= order.customer_email %></td>
@@ -17,6 +18,8 @@
       <% end %>
   <% end %></td>
   </tr>
+  <% else %>
+  <% end %>
 <% end %>
 </table>
 <% end %>

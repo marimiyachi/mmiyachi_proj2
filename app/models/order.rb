@@ -13,4 +13,16 @@ class Order < ActiveRecord::Base
   def customer_email
     return Storekeeper.find_by_id(self.customer_id).email
   end
+
+  # requires: storekeeper
+  # returns array of items belonging to storekeeper
+  def contains_items_from(storekeeper)
+    self.order_its.each do |item|
+      if Item.find_by_id(item.item_number).store_id == Store.find_by_storekeeper_id(storekeeper.id).id
+        return true
+      end
+    end
+    return false
+  end
+
 end
