@@ -3,5 +3,5 @@
   <td><%= item.price %></td>
   <td><%= item.quantity %></td>
   <td><%= link_to "Edit", edit_item_path(item) %></td>
-  <td><%= link_to "Destroy", "#" %></td>
+  <td><%= link_to "Destroy", item_destroy_path(:id => item.id) %></td>
 </tr>

@@ -9,8 +9,10 @@ class Cart < ActiveRecord::Base
   def total(cart_items)
     total = 0
     cart_items.each do |item|
-      item_price = Item.find_by_id(item.item_number).price
-      total = total + item_price
+      if Item.find_by_id(item.item_number)
+        item_price = Item.find_by_id(item.item_number).price
+        total = total + item_price
+      end
     end
     return total
   end

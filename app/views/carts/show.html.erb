@@ -16,12 +16,14 @@
     <th></th>
   </tr>
   <% @cart.cart_items.each do |item| %>
+    <% if Item.find_by_id(item.item_number) %>
     <tr>
       <td><%= item.item_name %></td>
       <td>$<%= item.item_price %></td>
       <td><%= item.store_name %></td>
-      <td><%= link_to "Delete", "#" %></td>
+      <td><%= link_to "Delete", cart_destroy_url(:id => item.id) %></td>
     </tr>
+    <% end %>
   <% end %>
   <tr>
     <td></td>
