@@ -1,5 +1,5 @@
 <% provide(:title, 'Orders') %>
-<h3>Recent Orders</h3>
+<h3>Orders Placed in Your Store</h3>
 <br/>
 <% if @orders.count > 0 %>
 <table class="table table-striped table-bordered">
@@ -23,6 +23,28 @@
   </tr>
   <% end %>
   <% end %>
+<% end %>
+</table>
+<br/>
+<h3>Orders You've Placed</h3>
+<br/>
+<table class="table table-striped table-bordered">
+<tr>
+  <th>Order Number</th>
+  <th>Item Info</th>
+</tr>
+<% @orders.each do |order| %>
+  <% if order.order_its.any? %>
+  <% if order.storekeeper_id == @storekeeper.id %>
+  <tr>
+    <td><%= order.id %></td>
+    <td><% order.order_its.each do |item| %>
+      <% if Item.find_by_id(item.item_number) %>
+      [<%= item.item_number %>] <%= item.item_name %> <br/>
+      <% end %><% end %>
+  </td>
+  </tr>
+  <% end %><% end %>
 <% end %>
 </table>
 <% end %>

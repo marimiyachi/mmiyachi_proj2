@@ -9,12 +9,15 @@ class ItemTest < ActiveSupport::TestCase
     storekeeper = storekeepers(:one)
     store = storekeeper.stores.create(name: "Store",
                               description: "Blah")
-    cart = storekeeper.carts.new
+    cart = storekeeper.carts.create()
     item = store.items.create(name: "test",
                               price: 12.5,
                               quantity: 3,
                               description: "blah")
-    assert_equal item.quantity, 3
+    item.update_quantity
+    cart.add_item(item)
+    assert_equal item.quantity, 2
+    assert_equal cart.cart_items.first.item_number, item.id
   end
 
 end
