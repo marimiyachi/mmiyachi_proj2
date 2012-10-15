@@ -90,8 +90,11 @@ class CartsController < ApplicationController
   end
 
   # DELETE Cart Item object
+  # Increment the Item object quantity
   def destroy_item
     @cart_item = CartItem.find_by_id(params[:id])
+    @item = Item.find_by_id(@cart_item.item_number)
+    @item.increment_quantity
     @cart_item.destroy
   end
 end
