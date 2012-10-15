@@ -1,0 +1,906 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "orders"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:46:11', '2012-10-15 00:46:11', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:46:11', '2012-10-15 00:46:11', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 00:46:11', '2012-10-15 00:46:11', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 00:46:11', '2012-10-15 00:46:11', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "storekeepers"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Mari', 'mmiyachi@mit.edu', 'MyString', '2012-10-15 00:46:11', '2012-10-15 00:46:11', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Jane', 'jdoe@mit.edu', 'MyString', '2012-10-15 00:46:11', '2012-10-15 00:46:11', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:46:11', '2012-10-15 00:46:11', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:46:11', '2012-10-15 00:46:11', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "order_its"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:46:11', '2012-10-15 00:46:11', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:46:11', '2012-10-15 00:46:11', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "cart_items"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:46:11', '2012-10-15 00:46:11', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:46:11', '2012-10-15 00:46:11', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "stores"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 00:46:11', '2012-10-15 00:46:11', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 00:46:11', '2012-10-15 00:46:11', 298486374)
+  [1m[36m (26.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "orders"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:46:54', '2012-10-15 00:46:54', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:46:54', '2012-10-15 00:46:54', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 00:46:54', '2012-10-15 00:46:54', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 00:46:54', '2012-10-15 00:46:54', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "storekeepers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Mari', 'mmiyachi@mit.edu', 'MyString', '2012-10-15 00:46:54', '2012-10-15 00:46:54', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Jane', 'jdoe@mit.edu', 'MyString', '2012-10-15 00:46:54', '2012-10-15 00:46:54', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:46:54', '2012-10-15 00:46:54', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:46:54', '2012-10-15 00:46:54', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "order_its"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:46:54', '2012-10-15 00:46:54', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:46:54', '2012-10-15 00:46:54', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "cart_items"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:46:54', '2012-10-15 00:46:54', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:46:54', '2012-10-15 00:46:54', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "stores"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 00:46:54', '2012-10-15 00:46:54', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 00:46:54', '2012-10-15 00:46:54', 298486374)
+  [1m[36m (14.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStorekeeper Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "storekeepers" WHERE "storekeepers"."email" = 'mmiyachi@mit.edu' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "orders"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:47:58', '2012-10-15 00:47:58', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:47:58', '2012-10-15 00:47:58', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 00:47:58', '2012-10-15 00:47:58', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 00:47:58', '2012-10-15 00:47:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "storekeepers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Mari', 'mmiyachi@mit.edu', 'MyString', '2012-10-15 00:47:58', '2012-10-15 00:47:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Jane', 'jdoe@mit.edu', 'MyString', '2012-10-15 00:47:58', '2012-10-15 00:47:58', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:47:58', '2012-10-15 00:47:58', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:47:58', '2012-10-15 00:47:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "order_its"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:47:58', '2012-10-15 00:47:58', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:47:58', '2012-10-15 00:47:58', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "cart_items"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:47:58', '2012-10-15 00:47:58', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:47:58', '2012-10-15 00:47:58', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "stores"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 00:47:58', '2012-10-15 00:47:58', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 00:47:58', '2012-10-15 00:47:58', 298486374)
+  [1m[36m (17.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStorekeeper Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "storekeepers" WHERE "storekeepers"."email" = 'mmiyachi@mit.edu' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.8ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "orders"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:48:31', '2012-10-15 00:48:31', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:48:31', '2012-10-15 00:48:31', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 00:48:31', '2012-10-15 00:48:31', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 00:48:31', '2012-10-15 00:48:31', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "storekeepers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Mari', 'mmiyachi@mit.edu', 'MyString', '2012-10-15 00:48:31', '2012-10-15 00:48:31', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Jane', 'jdoe@mit.edu', 'MyString', '2012-10-15 00:48:31', '2012-10-15 00:48:31', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:48:31', '2012-10-15 00:48:31', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:48:31', '2012-10-15 00:48:31', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "order_its"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:48:31', '2012-10-15 00:48:31', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:48:31', '2012-10-15 00:48:31', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "cart_items"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:48:31', '2012-10-15 00:48:31', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:48:31', '2012-10-15 00:48:31', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "stores"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 00:48:31', '2012-10-15 00:48:31', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 00:48:31', '2012-10-15 00:48:31', 298486374)
+  [1m[36m (25.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "orders"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:50:09', '2012-10-15 00:50:09', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:50:09', '2012-10-15 00:50:09', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 00:50:09', '2012-10-15 00:50:09', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 00:50:09', '2012-10-15 00:50:09', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "storekeepers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Mari', 'mmiyachi@mit.edu', 'MyString', '2012-10-15 00:50:09', '2012-10-15 00:50:09', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Jane', 'jdoe@mit.edu', 'MyString', '2012-10-15 00:50:09', '2012-10-15 00:50:09', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:50:09', '2012-10-15 00:50:09', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:50:09', '2012-10-15 00:50:09', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "order_its"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:50:09', '2012-10-15 00:50:09', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:50:09', '2012-10-15 00:50:09', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "cart_items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:50:09', '2012-10-15 00:50:09', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:50:09', '2012-10-15 00:50:09', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "stores"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 00:50:09', '2012-10-15 00:50:09', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 00:50:09', '2012-10-15 00:50:09', 298486374)
+  [1m[36m (13.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStorekeeper Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "storekeepers" WHERE "storekeepers"."email" = 'mmiyachi@mit.edu' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "orders"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:50:50', '2012-10-15 00:50:50', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:50:50', '2012-10-15 00:50:50', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 00:50:50', '2012-10-15 00:50:50', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 00:50:50', '2012-10-15 00:50:50', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "storekeepers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Mari', 'mmiyachi@mit.edu', 'MyString', '2012-10-15 00:50:50', '2012-10-15 00:50:50', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Jane', 'jdoe@mit.edu', 'MyString', '2012-10-15 00:50:50', '2012-10-15 00:50:50', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:50:50', '2012-10-15 00:50:50', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:50:50', '2012-10-15 00:50:50', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "order_its"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:50:50', '2012-10-15 00:50:50', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:50:50', '2012-10-15 00:50:50', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "cart_items"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:50:50', '2012-10-15 00:50:50', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:50:50', '2012-10-15 00:50:50', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "stores"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 00:50:50', '2012-10-15 00:50:50', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 00:50:50', '2012-10-15 00:50:50', 298486374)
+  [1m[36m (24.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (1.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStorekeeper Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "storekeepers" WHERE "storekeepers"."email" = 'mmiyachi@mit.edu' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "orders"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:54:37', '2012-10-15 00:54:37', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:54:37', '2012-10-15 00:54:37', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 00:54:37', '2012-10-15 00:54:37', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 00:54:37', '2012-10-15 00:54:37', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "storekeepers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Mari', 'mmiyachi@mit.edu', 'MyString', '2012-10-15 00:54:37', '2012-10-15 00:54:37', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Jane', 'jdoe@mit.edu', 'MyString', '2012-10-15 00:54:37', '2012-10-15 00:54:37', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:54:37', '2012-10-15 00:54:37', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:54:37', '2012-10-15 00:54:37', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "order_its"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:54:37', '2012-10-15 00:54:37', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:54:37', '2012-10-15 00:54:37', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "cart_items"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:54:37', '2012-10-15 00:54:37', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:54:37', '2012-10-15 00:54:37', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "stores"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 00:54:37', '2012-10-15 00:54:37', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 00:54:37', '2012-10-15 00:54:37', 298486374)
+  [1m[36m (17.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStorekeeper Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "storekeepers" WHERE "storekeepers"."email" = 'mmiyachi@mit.edu' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "orders"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:54:54', '2012-10-15 00:54:54', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:54:54', '2012-10-15 00:54:54', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 00:54:54', '2012-10-15 00:54:54', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 00:54:54', '2012-10-15 00:54:54', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "storekeepers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Mari', 'mmiyachi@mit.edu', 'MyString', '2012-10-15 00:54:54', '2012-10-15 00:54:54', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Jane', 'jdoe@mit.edu', 'MyString', '2012-10-15 00:54:54', '2012-10-15 00:54:54', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:54:54', '2012-10-15 00:54:54', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:54:54', '2012-10-15 00:54:54', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "order_its"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:54:54', '2012-10-15 00:54:54', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:54:54', '2012-10-15 00:54:54', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "cart_items"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:54:54', '2012-10-15 00:54:54', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:54:54', '2012-10-15 00:54:54', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "stores"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 00:54:54', '2012-10-15 00:54:54', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 00:54:54', '2012-10-15 00:54:54', 298486374)
+  [1m[36m (14.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (4.5ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "orders"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:55:40', '2012-10-15 00:55:40', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:55:40', '2012-10-15 00:55:40', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 00:55:40', '2012-10-15 00:55:40', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 00:55:40', '2012-10-15 00:55:40', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "storekeepers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Mari', 'mmiyachi@mit.edu', 'MyString', '2012-10-15 00:55:40', '2012-10-15 00:55:40', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Jane', 'jdoe@mit.edu', 'MyString', '2012-10-15 00:55:40', '2012-10-15 00:55:40', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:55:40', '2012-10-15 00:55:40', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:55:40', '2012-10-15 00:55:40', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "order_its"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:55:40', '2012-10-15 00:55:40', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 00:55:40', '2012-10-15 00:55:40', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "cart_items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:55:40', '2012-10-15 00:55:40', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 00:55:40', '2012-10-15 00:55:40', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "stores"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 00:55:40', '2012-10-15 00:55:40', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 00:55:40', '2012-10-15 00:55:40', 298486374)
+  [1m[36m (22.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mStorekeeper Load (0.2ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStorekeeper Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "storekeepers" WHERE "storekeepers"."email" = 'mmiyachi@mit.edu' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "orders"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:03:23', '2012-10-15 01:03:23', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:03:23', '2012-10-15 01:03:23', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:03:23', '2012-10-15 01:03:23', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:03:23', '2012-10-15 01:03:23', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "storekeepers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Mari', 'mmiyachi@mit.edu', 'MyString', '2012-10-15 01:03:23', '2012-10-15 01:03:23', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Jane', 'jdoe@mit.edu', 'MyString', '2012-10-15 01:03:23', '2012-10-15 01:03:23', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:03:23', '2012-10-15 01:03:23', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:03:23', '2012-10-15 01:03:23', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "order_its"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:03:23', '2012-10-15 01:03:23', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:03:23', '2012-10-15 01:03:23', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "cart_items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:03:23', '2012-10-15 01:03:23', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:03:23', '2012-10-15 01:03:23', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "stores"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:03:23', '2012-10-15 01:03:23', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:03:23', '2012-10-15 01:03:23', 298486374)
+  [1m[36m (15.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStorekeeper Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "storekeepers" WHERE "storekeepers"."email" = 'mmiyachi@mit.edu' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStorekeeper Exists (0.1ms)[0m  SELECT 1 AS one FROM "storekeepers" WHERE "storekeepers"."email" = 'mmiyachi@mit.edu' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "orders"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:20:37', '2012-10-15 01:20:37', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:20:37', '2012-10-15 01:20:37', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:20:37', '2012-10-15 01:20:37', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:20:37', '2012-10-15 01:20:37', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "storekeepers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Mari', 'mmiyachi@mit.edu', 'MyString', '2012-10-15 01:20:37', '2012-10-15 01:20:37', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Jane', 'jdoe@mit.edu', 'MyString', '2012-10-15 01:20:37', '2012-10-15 01:20:37', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:20:37', '2012-10-15 01:20:37', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:20:37', '2012-10-15 01:20:37', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "order_its"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:20:37', '2012-10-15 01:20:37', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:20:37', '2012-10-15 01:20:37', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "cart_items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:20:37', '2012-10-15 01:20:37', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:20:37', '2012-10-15 01:20:37', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "stores"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:20:37', '2012-10-15 01:20:37', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:20:37', '2012-10-15 01:20:37', 298486374)
+  [1m[36m (29.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mStorekeeper Load (0.2ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStorekeeper Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "storekeepers" WHERE "storekeepers"."email" = 'mmiyachi@mit.edu' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStorekeeper Exists (0.1ms)[0m  SELECT 1 AS one FROM "storekeepers" WHERE "storekeepers"."email" = 'mmiyachi@mit.edu' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "orders"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:20:56', '2012-10-15 01:20:56', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:20:56', '2012-10-15 01:20:56', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:20:57', '2012-10-15 01:20:57', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:20:57', '2012-10-15 01:20:57', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "storekeepers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Mari', 'mmiyachi@mit.edu', 'MyString', '2012-10-15 01:20:57', '2012-10-15 01:20:57', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Jane', 'jdoe@mit.edu', 'MyString', '2012-10-15 01:20:57', '2012-10-15 01:20:57', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:20:57', '2012-10-15 01:20:57', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:20:57', '2012-10-15 01:20:57', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "order_its"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:20:57', '2012-10-15 01:20:57', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:20:57', '2012-10-15 01:20:57', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "cart_items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:20:57', '2012-10-15 01:20:57', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:20:57', '2012-10-15 01:20:57', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "stores"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:20:57', '2012-10-15 01:20:57', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:20:57', '2012-10-15 01:20:57', 298486374)
+  [1m[36m (19.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStorekeeper Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "storekeepers" WHERE "storekeepers"."email" = 'mmiyachi@mit.edu' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStorekeeper Exists (0.1ms)[0m  SELECT 1 AS one FROM "storekeepers" WHERE "storekeepers"."email" = 'mmiyachi@mit.edu' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "orders"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:22:03', '2012-10-15 01:22:03', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:22:03', '2012-10-15 01:22:03', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:22:03', '2012-10-15 01:22:03', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:22:03', '2012-10-15 01:22:03', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "storekeepers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Mari', 'mmiyachi@mit.edu', 'MyString', '2012-10-15 01:22:03', '2012-10-15 01:22:03', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Jane', 'jdoe@mit.edu', 'MyString', '2012-10-15 01:22:03', '2012-10-15 01:22:03', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:22:03', '2012-10-15 01:22:03', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:22:03', '2012-10-15 01:22:03', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "order_its"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:22:03', '2012-10-15 01:22:03', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:22:03', '2012-10-15 01:22:03', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "cart_items"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:22:03', '2012-10-15 01:22:03', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:22:03', '2012-10-15 01:22:03', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "stores"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:22:03', '2012-10-15 01:22:03', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:22:03', '2012-10-15 01:22:03', 298486374)
+  [1m[36m (24.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStorekeeper Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "storekeepers" WHERE "storekeepers"."email" = 'mmiyachi@mit.edu' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStorekeeper Exists (0.0ms)[0m  SELECT 1 AS one FROM "storekeepers" WHERE "storekeepers"."email" = 'mmiyachi@mit.edu' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "orders"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:23:21', '2012-10-15 01:23:21', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:23:21', '2012-10-15 01:23:21', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:23:21', '2012-10-15 01:23:21', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:23:21', '2012-10-15 01:23:21', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "storekeepers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Mari', 'mmiyachi@mit.edu', 'MyString', '2012-10-15 01:23:21', '2012-10-15 01:23:21', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Jane', 'jdoe@mit.edu', 'MyString', '2012-10-15 01:23:21', '2012-10-15 01:23:21', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:23:21', '2012-10-15 01:23:21', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:23:21', '2012-10-15 01:23:21', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "order_its"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:23:21', '2012-10-15 01:23:21', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:23:21', '2012-10-15 01:23:21', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "cart_items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:23:21', '2012-10-15 01:23:21', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:23:21', '2012-10-15 01:23:21', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "stores"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:23:21', '2012-10-15 01:23:21', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:23:21', '2012-10-15 01:23:21', 298486374)
+  [1m[36m (24.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStorekeeper Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "storekeepers" WHERE "storekeepers"."email" = 'mmiyachi@mit.edu' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStorekeeper Exists (0.0ms)[0m  SELECT 1 AS one FROM "storekeepers" WHERE "storekeepers"."email" = 'mmiyachi@mit.edu' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "orders"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:23:41', '2012-10-15 01:23:41', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:23:41', '2012-10-15 01:23:41', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:23:41', '2012-10-15 01:23:41', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:23:41', '2012-10-15 01:23:41', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "storekeepers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Mari', 'mmiyachi@mit.edu', 'MyString', '2012-10-15 01:23:41', '2012-10-15 01:23:41', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Jane', 'jdoe@mit.edu', 'MyString', '2012-10-15 01:23:41', '2012-10-15 01:23:41', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:23:41', '2012-10-15 01:23:41', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:23:41', '2012-10-15 01:23:41', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "order_its"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:23:41', '2012-10-15 01:23:41', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:23:41', '2012-10-15 01:23:41', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "cart_items"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:23:41', '2012-10-15 01:23:41', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:23:41', '2012-10-15 01:23:41', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "stores"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:23:41', '2012-10-15 01:23:41', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:23:41', '2012-10-15 01:23:41', 298486374)
+  [1m[36m (15.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStorekeeper Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "storekeepers" WHERE "storekeepers"."email" = 'mmiyachi@mit.edu' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."name" = 'Mari' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStorekeeper Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "storekeepers" WHERE "storekeepers"."email" = 'mmiyachi@mit.edu' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "orders"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:23:56', '2012-10-15 01:23:56', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:23:56', '2012-10-15 01:23:56', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:23:56', '2012-10-15 01:23:56', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:23:56', '2012-10-15 01:23:56', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "storekeepers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Mari', 'mmiyachi@mit.edu', 'MyString', '2012-10-15 01:23:56', '2012-10-15 01:23:56', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Jane', 'jdoe@mit.edu', 'MyString', '2012-10-15 01:23:56', '2012-10-15 01:23:56', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:23:56', '2012-10-15 01:23:56', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:23:56', '2012-10-15 01:23:56', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "order_its"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:23:56', '2012-10-15 01:23:56', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:23:56', '2012-10-15 01:23:56', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "cart_items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:23:56', '2012-10-15 01:23:56', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:23:56', '2012-10-15 01:23:56', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "stores"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:23:56', '2012-10-15 01:23:56', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:23:56', '2012-10-15 01:23:56', 298486374)
+  [1m[36m (27.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mStorekeeper Load (0.2ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStorekeeper Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "storekeepers" WHERE "storekeepers"."email" = 'mmiyachi@mit.edu' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."name" = 'Mari' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "orders"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:30:04', '2012-10-15 01:30:04', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:30:04', '2012-10-15 01:30:04', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:30:04', '2012-10-15 01:30:04', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:30:04', '2012-10-15 01:30:04', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "storekeepers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Mari', 'mmiyachi@mit.edu', 'MyString', '2012-10-15 01:30:04', '2012-10-15 01:30:04', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Jane', 'jdoe@mit.edu', 'MyString', '2012-10-15 01:30:04', '2012-10-15 01:30:04', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:30:04', '2012-10-15 01:30:04', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:30:04', '2012-10-15 01:30:04', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "order_its"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:30:04', '2012-10-15 01:30:04', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:30:04', '2012-10-15 01:30:04', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "cart_items"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:30:04', '2012-10-15 01:30:04', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:30:04', '2012-10-15 01:30:04', 298486374)[0m
+  [1m[35mFixture Delete (0.6ms)[0m  DELETE FROM "stores"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:30:04', '2012-10-15 01:30:04', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:30:04', '2012-10-15 01:30:04', 298486374)
+  [1m[36m (25.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStorekeeper Exists (0.1ms)[0m  SELECT 1 AS one FROM "storekeepers" WHERE "storekeepers"."email" = 'mmiyachi@mit.edu' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "orders"
+  [1m[36mFixture Insert (0.7ms)[0m  [1mINSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:30:45', '2012-10-15 01:30:45', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:30:45', '2012-10-15 01:30:45', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:30:45', '2012-10-15 01:30:45', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:30:45', '2012-10-15 01:30:45', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "storekeepers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Mari', 'mmiyachi@mit.edu', 'MyString', '2012-10-15 01:30:45', '2012-10-15 01:30:45', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Jane', 'jdoe@mit.edu', 'MyString', '2012-10-15 01:30:45', '2012-10-15 01:30:45', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:30:45', '2012-10-15 01:30:45', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:30:45', '2012-10-15 01:30:45', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "order_its"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:30:45', '2012-10-15 01:30:45', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:30:45', '2012-10-15 01:30:45', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "cart_items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:30:45', '2012-10-15 01:30:45', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:30:45', '2012-10-15 01:30:45', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "stores"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:30:45', '2012-10-15 01:30:45', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:30:45', '2012-10-15 01:30:45', 298486374)
+  [1m[36m (15.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStorekeeper Exists (0.1ms)[0m  SELECT 1 AS one FROM "storekeepers" WHERE "storekeepers"."email" = 'mmiyachi@mit.edu' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStorekeeper Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "storekeepers" WHERE "storekeepers"."email" = 'mmiyachi@mit.edu' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "orders"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:32:19', '2012-10-15 01:32:19', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:32:19', '2012-10-15 01:32:19', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:32:19', '2012-10-15 01:32:19', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:32:19', '2012-10-15 01:32:19', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "storekeepers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Mari', 'mmiyachi@mit.edu', 'MyString', '2012-10-15 01:32:19', '2012-10-15 01:32:19', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Jane', 'jdoe@mit.edu', 'MyString', '2012-10-15 01:32:19', '2012-10-15 01:32:19', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:32:19', '2012-10-15 01:32:19', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:32:19', '2012-10-15 01:32:19', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "order_its"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:32:19', '2012-10-15 01:32:19', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:32:19', '2012-10-15 01:32:19', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "cart_items"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:32:19', '2012-10-15 01:32:19', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:32:19', '2012-10-15 01:32:19', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "stores"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:32:19', '2012-10-15 01:32:19', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:32:19', '2012-10-15 01:32:19', 298486374)
+  [1m[36m (23.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "stores" ("created_at", "description", "name", "storekeeper_id", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 15 Oct 2012 01:32:19 UTC +00:00], ["description", "Blah"], ["name", "Store"], ["storekeeper_id", 980190962], ["updated_at", Mon, 15 Oct 2012 01:32:19 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "items" ("cart_id", "created_at", "description", "name", "price", "quantity", "store_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["cart_id", nil], ["created_at", Mon, 15 Oct 2012 01:32:19 UTC +00:00], ["description", "blah"], ["name", "test"], ["price", 12.5], ["quantity", 3], ["store_id", 980190963], ["updated_at", Mon, 15 Oct 2012 01:32:19 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "orders"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:33:49', '2012-10-15 01:33:49', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:33:49', '2012-10-15 01:33:49', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:33:49', '2012-10-15 01:33:49', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:33:49', '2012-10-15 01:33:49', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "storekeepers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Mari', 'mmiyachi@mit.edu', 'MyString', '2012-10-15 01:33:49', '2012-10-15 01:33:49', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Jane', 'jdoe@mit.edu', 'MyString', '2012-10-15 01:33:49', '2012-10-15 01:33:49', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:33:49', '2012-10-15 01:33:49', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:33:49', '2012-10-15 01:33:49', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "order_its"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:33:49', '2012-10-15 01:33:49', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:33:49', '2012-10-15 01:33:49', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "cart_items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:33:49', '2012-10-15 01:33:49', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:33:49', '2012-10-15 01:33:49', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "stores"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:33:49', '2012-10-15 01:33:49', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:33:49', '2012-10-15 01:33:49', 298486374)
+  [1m[36m (14.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mStorekeeper Load (0.2ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "stores" ("created_at", "description", "name", "storekeeper_id", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 15 Oct 2012 01:33:49 UTC +00:00], ["description", "Blah"], ["name", "Store"], ["storekeeper_id", 980190962], ["updated_at", Mon, 15 Oct 2012 01:33:49 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "items" ("cart_id", "created_at", "description", "name", "price", "quantity", "store_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["cart_id", nil], ["created_at", Mon, 15 Oct 2012 01:33:49 UTC +00:00], ["description", "blah"], ["name", "test"], ["price", 12.5], ["quantity", 3], ["store_id", 980190963], ["updated_at", Mon, 15 Oct 2012 01:33:49 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "orders"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:34:19', '2012-10-15 01:34:19', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:34:19', '2012-10-15 01:34:19', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:34:19', '2012-10-15 01:34:19', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:34:19', '2012-10-15 01:34:19', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "storekeepers"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Mari', 'mmiyachi@mit.edu', 'MyString', '2012-10-15 01:34:19', '2012-10-15 01:34:19', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Jane', 'jdoe@mit.edu', 'MyString', '2012-10-15 01:34:19', '2012-10-15 01:34:19', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:34:19', '2012-10-15 01:34:19', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:34:19', '2012-10-15 01:34:19', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "order_its"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:34:19', '2012-10-15 01:34:19', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:34:19', '2012-10-15 01:34:19', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "cart_items"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:34:19', '2012-10-15 01:34:19', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:34:19', '2012-10-15 01:34:19', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "stores"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:34:19', '2012-10-15 01:34:19', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:34:19', '2012-10-15 01:34:19', 298486374)
+  [1m[36m (26.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mStorekeeper Load (0.2ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "stores" ("created_at", "description", "name", "storekeeper_id", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 15 Oct 2012 01:34:19 UTC +00:00], ["description", "Blah"], ["name", "Store"], ["storekeeper_id", 980190962], ["updated_at", Mon, 15 Oct 2012 01:34:19 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("cart_id", "created_at", "description", "name", "price", "quantity", "store_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["cart_id", nil], ["created_at", Mon, 15 Oct 2012 01:34:19 UTC +00:00], ["description", "blah"], ["name", "test"], ["price", 12.5], ["quantity", 3], ["store_id", 980190963], ["updated_at", Mon, 15 Oct 2012 01:34:19 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "orders"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:39:10', '2012-10-15 01:39:10', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:39:10', '2012-10-15 01:39:10', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:39:10', '2012-10-15 01:39:10', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:39:10', '2012-10-15 01:39:10', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "storekeepers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Mari', 'mmiyachi@mit.edu', 'MyString', '2012-10-15 01:39:10', '2012-10-15 01:39:10', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Jane', 'jdoe@mit.edu', 'MyString', '2012-10-15 01:39:10', '2012-10-15 01:39:10', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:39:10', '2012-10-15 01:39:10', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:39:10', '2012-10-15 01:39:10', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "order_its"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:39:10', '2012-10-15 01:39:10', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:39:10', '2012-10-15 01:39:10', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "cart_items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:39:10', '2012-10-15 01:39:10', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:39:10', '2012-10-15 01:39:10', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "stores"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:39:10', '2012-10-15 01:39:10', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:39:10', '2012-10-15 01:39:10', 298486374)
+  [1m[36m (24.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "cart_items" ("cart_id", "created_at", "item_number", "store_number", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 980190962], ["created_at", Mon, 15 Oct 2012 01:39:10 UTC +00:00], ["item_number", 980190962], ["store_number", 1], ["updated_at", Mon, 15 Oct 2012 01:39:10 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mCartItem Load (0.1ms)[0m  SELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."cart_id" = 980190962
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 980190962 LIMIT 1[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 980190962 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "orders"
+  [1m[36mFixture Insert (0.9ms)[0m  [1mINSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:41:29', '2012-10-15 01:41:29', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:41:29', '2012-10-15 01:41:29', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:41:29', '2012-10-15 01:41:29', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:41:29', '2012-10-15 01:41:29', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "storekeepers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Mari', 'mmiyachi@mit.edu', 'MyString', '2012-10-15 01:41:29', '2012-10-15 01:41:29', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Jane', 'jdoe@mit.edu', 'MyString', '2012-10-15 01:41:29', '2012-10-15 01:41:29', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:41:29', '2012-10-15 01:41:29', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:41:29', '2012-10-15 01:41:29', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "order_its"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:41:29', '2012-10-15 01:41:29', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:41:29', '2012-10-15 01:41:29', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "cart_items"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:41:29', '2012-10-15 01:41:29', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:41:29', '2012-10-15 01:41:29', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "stores"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:41:29', '2012-10-15 01:41:29', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:41:29', '2012-10-15 01:41:29', 298486374)
+  [1m[36m (21.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mStorekeeper Load (0.2ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStorekeeper Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "storekeepers" WHERE "storekeepers"."email" = 'mmiyachi@mit.edu' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mStorekeeper Load (0.4ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."name" = 'Mari' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mStorekeeper Load (0.1ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "stores" ("created_at", "description", "name", "storekeeper_id", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 15 Oct 2012 01:41:29 UTC +00:00], ["description", "Test"], ["name", "Test"], ["storekeeper_id", 980190962], ["updated_at", Mon, 15 Oct 2012 01:41:29 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "stores" WHERE "stores"."storekeeper_id" = 980190962
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "orders"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:50:49', '2012-10-15 01:50:49', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:50:49', '2012-10-15 01:50:49', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:50:49', '2012-10-15 01:50:49', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:50:49', '2012-10-15 01:50:49', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "storekeepers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Mari', 'mmiyachi@mit.edu', 'MyString', '2012-10-15 01:50:49', '2012-10-15 01:50:49', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Jane', 'jdoe@mit.edu', 'MyString', '2012-10-15 01:50:49', '2012-10-15 01:50:49', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:50:49', '2012-10-15 01:50:49', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:50:49', '2012-10-15 01:50:49', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "order_its"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:50:49', '2012-10-15 01:50:49', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:50:49', '2012-10-15 01:50:49', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "cart_items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:50:49', '2012-10-15 01:50:49', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:50:49', '2012-10-15 01:50:49', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "stores"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:50:49', '2012-10-15 01:50:49', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:50:49', '2012-10-15 01:50:49', 298486374)
+  [1m[36m (14.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mOrder Load (0.0ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mUPDATE "orders" SET "customer_id" = 980190962, "updated_at" = '2012-10-15 01:50:49.331780' WHERE "orders"."id" = 980190962[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = 980190962 LIMIT 1[0m
+  [1m[35mStorekeeper Load (0.1ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = 980190962 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "orders"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:52:04', '2012-10-15 01:52:04', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:52:04', '2012-10-15 01:52:04', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:52:04', '2012-10-15 01:52:04', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:52:04', '2012-10-15 01:52:04', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "storekeepers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Mari', 'mmiyachi@mit.edu', 'MyString', '2012-10-15 01:52:04', '2012-10-15 01:52:04', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Jane', 'jdoe@mit.edu', 'MyString', '2012-10-15 01:52:04', '2012-10-15 01:52:04', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:52:04', '2012-10-15 01:52:04', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:52:04', '2012-10-15 01:52:04', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "order_its"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:52:04', '2012-10-15 01:52:04', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:52:04', '2012-10-15 01:52:04', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "cart_items"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:52:04', '2012-10-15 01:52:04', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:52:04', '2012-10-15 01:52:04', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "stores"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:52:04', '2012-10-15 01:52:04', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:52:04', '2012-10-15 01:52:04', 298486374)
+  [1m[36m (13.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mStorekeeper Load (0.1ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mStorekeeper Load (0.0ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "orders" SET "customer_id" = 980190962, "updated_at" = '2012-10-15 01:52:04.955123' WHERE "orders"."id" = 980190962
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mStorekeeper Load (0.1ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = 980190962 LIMIT 1
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = 980190962 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "orders"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:53:23', '2012-10-15 01:53:23', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:53:23', '2012-10-15 01:53:23', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:53:23', '2012-10-15 01:53:23', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:53:23', '2012-10-15 01:53:23', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "storekeepers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Mari', 'mmiyachi@mit.edu', 'MyString', '2012-10-15 01:53:23', '2012-10-15 01:53:23', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Jane', 'jdoe@mit.edu', 'MyString', '2012-10-15 01:53:23', '2012-10-15 01:53:23', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:53:23', '2012-10-15 01:53:23', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:53:23', '2012-10-15 01:53:23', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "order_its"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:53:23', '2012-10-15 01:53:23', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:53:23', '2012-10-15 01:53:23', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "cart_items"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:53:23', '2012-10-15 01:53:23', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:53:23', '2012-10-15 01:53:23', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "stores"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:53:23', '2012-10-15 01:53:23', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:53:23', '2012-10-15 01:53:23', 298486374)
+  [1m[36m (18.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mStorekeeper Load (0.1ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "stores" ("created_at", "description", "name", "storekeeper_id", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 15 Oct 2012 01:53:23 UTC +00:00], ["description", "test"], ["name", "test"], ["storekeeper_id", 980190962], ["updated_at", Mon, 15 Oct 2012 01:53:23 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "items" ("cart_id", "created_at", "description", "name", "price", "quantity", "store_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cart_id", nil], ["created_at", Mon, 15 Oct 2012 01:53:23 UTC +00:00], ["description", "test"], ["name", "Test"], ["price", 12.0], ["quantity", 3], ["store_id", 980190963], ["updated_at", Mon, 15 Oct 2012 01:53:23 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_its" ("created_at", "item_number", "order_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 15 Oct 2012 01:53:23 UTC +00:00], ["item_number", 980190963], ["order_id", 980190962], ["updated_at", Mon, 15 Oct 2012 01:53:23 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 980190962
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 980190963 LIMIT 1[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 980190963 LIMIT 1
+  [1m[36mStore Load (0.1ms)[0m  [1mSELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 980190962 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mOrder Load (0.1ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mStorekeeper Load (0.0ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mUPDATE "orders" SET "customer_id" = 980190962, "updated_at" = '2012-10-15 01:53:23.995562' WHERE "orders"."id" = 980190962[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = 980190962 LIMIT 1[0m
+  [1m[35mStorekeeper Load (0.1ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = 980190962 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "orders"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:53:59', '2012-10-15 01:53:59', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "orders" ("customer_id", "storekeeper_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:53:59', '2012-10-15 01:53:59', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:53:59', '2012-10-15 01:53:59', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "items" ("name", "price", "quantity", "description", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 'MyString', '2012-10-15 01:53:59', '2012-10-15 01:53:59', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "storekeepers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Mari', 'mmiyachi@mit.edu', 'MyString', '2012-10-15 01:53:59', '2012-10-15 01:53:59', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "storekeepers" ("name", "email", "password_digest", "created_at", "updated_at", "id") VALUES ('Jane', 'jdoe@mit.edu', 'MyString', '2012-10-15 01:53:59', '2012-10-15 01:53:59', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "carts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:53:59', '2012-10-15 01:53:59', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "carts" ("storekeeper_id", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:53:59', '2012-10-15 01:53:59', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "order_its"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:53:59', '2012-10-15 01:53:59', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "order_its" ("order_id", "item_number", "created_at", "updated_at", "id") VALUES (1, 1, '2012-10-15 01:53:59', '2012-10-15 01:53:59', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "cart_items"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:53:59', '2012-10-15 01:53:59', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "cart_items" ("item_number", "created_at", "updated_at", "id") VALUES (1, '2012-10-15 01:53:59', '2012-10-15 01:53:59', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "stores"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:53:59', '2012-10-15 01:53:59', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "stores" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-10-15 01:53:59', '2012-10-15 01:53:59', 298486374)
+  [1m[36m (26.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mStorekeeper Load (0.1ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "stores" ("created_at", "description", "name", "storekeeper_id", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 15 Oct 2012 01:53:59 UTC +00:00], ["description", "test"], ["name", "test"], ["storekeeper_id", 980190962], ["updated_at", Mon, 15 Oct 2012 01:53:59 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("cart_id", "created_at", "description", "name", "price", "quantity", "store_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cart_id", nil], ["created_at", Mon, 15 Oct 2012 01:53:59 UTC +00:00], ["description", "test"], ["name", "Test"], ["price", 12.0], ["quantity", 3], ["store_id", 980190963], ["updated_at", Mon, 15 Oct 2012 01:53:59 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "order_its" ("created_at", "item_number", "order_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 15 Oct 2012 01:53:59 UTC +00:00], ["item_number", 980190963], ["order_id", 980190962], ["updated_at", Mon, 15 Oct 2012 01:53:59 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mOrderIt Load (0.1ms)[0m  SELECT "order_its".* FROM "order_its" WHERE "order_its"."order_id" = 980190962
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 980190963 LIMIT 1[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 980190963 LIMIT 1
+  [1m[36mStore Load (0.1ms)[0m  [1mSELECT "stores".* FROM "stores" WHERE "stores"."storekeeper_id" = 980190962 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mOrder Load (0.1ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mStorekeeper Load (0.0ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mUPDATE "orders" SET "customer_id" = 980190962, "updated_at" = '2012-10-15 01:53:59.971587' WHERE "orders"."id" = 980190962[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mStorekeeper Load (0.1ms)[0m  [1mSELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = 980190962 LIMIT 1[0m
+  [1m[35mStorekeeper Load (0.1ms)[0m  SELECT "storekeepers".* FROM "storekeepers" WHERE "storekeepers"."id" = 980190962 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m

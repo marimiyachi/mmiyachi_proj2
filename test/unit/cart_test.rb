@@ -1,7 +1,19 @@
 require 'test_helper'
 
 class CartTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+
+  fixtures :carts, :items
+
+  # test the cart total function
+  def test_total
+    cart = carts(:one)
+    original = items(:one)
+    item = cart.cart_items.build()
+    item.update_attributes(item_number: original.id,
+                          store_number: 1)
+
+    t = cart.total(cart.cart_items)
+    assert_equal t, original.price
+  end
+
 end

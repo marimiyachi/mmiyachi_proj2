@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  name: MyString
-  email: MyString
+  name: Mari
+  email: mmiyachi@mit.edu
   password_digest: MyString
 
 two:
-  name: MyString
-  email: MyString
+  name: Jane
+  email: jdoe@mit.edu
   password_digest: MyString
