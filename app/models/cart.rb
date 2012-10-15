@@ -16,4 +16,24 @@ class Cart < ActiveRecord::Base
     end
     return total
   end
+
+  # requires: customer who is checking out cart
+  # modifies: cart items, adding each to a new order belong to the customer
+  #           deletes cart items from customer cart
+  def final_checkout(customer)
+    @order = customer.orders.new()
+    @order.update_attributes(customer_id: @customer, id: self.id)
+    self.cart_items.each do |item|
+      @item = @order.order_its.new()
+      @item.update_attributes(item_number: item.item_number)
+      item.destroy
+    end
+  end
+
+  # requires: item that is being added to the cart
+  # creates new cart_item as mirror of original input item
+  def add_item(item)
+    new_item = self.storekeeper.carts.first.cart_items.build()
+    new_item.update_attributes(item_number: item.id, store_number: item.store_id)
+  end
 end

@@ -38,16 +38,11 @@ class CartsController < ApplicationController
     @cart = Cart.find(params[:id])
   end
 
+  # Processes the cart for final checkout
   def checkout
     @cart = Cart.find(params[:id])
     @customer = current_storekeeper
-    @order = @customer.orders.new()
-    @order.update_attributes(customer_id: @customer.id, id: @cart.id)
-    @cart.cart_items.each do |item|
-    @item = @order.order_its.new()
-    @item.update_attributes(item_number: item.item_number)
-    item.destroy
-    end
+    @cart.final_checkout(@customer)
   end
 
   # POST /carts
@@ -94,6 +89,7 @@ class CartsController < ApplicationController
     end
   end
 
+  # DELETE Cart Item object
   def destroy_item
     @cart_item = CartItem.find_by_id(params[:id])
     @cart_item.destroy

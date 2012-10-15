@@ -1,5 +1,4 @@
 class StoresController < ApplicationController
-  before_filter :signed_in_user
 
   # GET /stores
   # GET /stores.json
@@ -24,6 +23,8 @@ class StoresController < ApplicationController
     end
   end
 
+  # provide information for shopping interface
+  # all stores and items available for view to signed in shopkeepers
   def shop
     @store = Store.find(params[:id])
     @items = @store.items
@@ -94,7 +95,7 @@ class StoresController < ApplicationController
   private
     # redirect if user is not logged in
     def signed_in_user
-      redirect_to storekeepersignin_path, notice: "Please sign in." unless signed_in?
+      redirect_to storekeepersignup_path, notice: "Please sign in." unless signed_in?
     end
 
     # redirect if user is accessing material they don't own

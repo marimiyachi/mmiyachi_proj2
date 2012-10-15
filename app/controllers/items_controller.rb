@@ -38,18 +38,14 @@ class ItemsController < ApplicationController
     @store = Store.find_by_id(@item.store_id)
   end
 
+  # Places item into customer cart
+  # Updates the quantity of the Item object
+  # Adds Cart Item object to customer cart
   def basket
     @item = Item.find(params[:id])
-    @current_storekeeper = current_storekeeper
-    @quantity = @item.quantity.to_i - 1
-    @id = @item.id
-    @store_id = @item.store_id
-    @item.update_attributes(quantity: @quantity)
+    @item.update_quantity
     @cart = Cart.find(params[:sid])
-    if @cart
-      @new_item = current_storekeeper.carts.first.cart_items.build()
-      @new_item.update_attributes(item_number: @id, store_number: @store_id)
-    end
+    @cart.add_item(@item)
 
     respond_to do |format|
       format.html

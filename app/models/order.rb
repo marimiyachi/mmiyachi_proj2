@@ -6,12 +6,12 @@ class Order < ActiveRecord::Base
   
   # getter for order's customer name
   def customer_name
-    return Storekeeper.find_by_id(self.customer_id).name
+    return Storekeeper.find_by_id(self.storekeeper_id).name
   end
 
   # getter for order's customer email
   def customer_email
-    return Storekeeper.find_by_id(self.customer_id).email
+    return Storekeeper.find_by_id(self.storekeeper_id).email
   end
 
   # requires: storekeeper

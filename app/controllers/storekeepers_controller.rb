@@ -1,6 +1,6 @@
 class StorekeepersController < ApplicationController
   before_filter :signed_in_user
-  before_filter :correct_user
+#  before_filter :correct_user
 
   # GET /storekeepers
   # GET /storekeepers.json
@@ -25,6 +25,7 @@ class StorekeepersController < ApplicationController
     end
   end
 
+  # Provides data to view incoming orders
   def order
     @storekeeper = Storekeeper.find(params[:id])
     @orders = Order.all
@@ -32,6 +33,7 @@ class StorekeepersController < ApplicationController
 
   # GET /storekeepers/new
   # GET /storekeepers/new.json
+  # create cart at the same time as storekeeper object
   def new
     @storekeeper = Storekeeper.new
     @cart = Cart.new
@@ -92,7 +94,7 @@ class StorekeepersController < ApplicationController
   private
     # redirect if user is not logged in
     def signed_in_user
-      redirect_to storekeepersignin_path, notice: "Please sign in." unless signed_in?
+#redirect_to storekeepersignup_path, notice: "Please sign in." unless signed_in?
     end
 
     # redirect if user is accessing material they don't own

@@ -24,7 +24,7 @@
     <th>Description</th>
     <th></th>
   </tr>
-  <% @items.each do |item| %><% if item.quantity != 0.to_i %>
+  <% @items.each do |item| %><% if item.quantity > 0.to_i %>
   <tr>
     <td><%= item.name %></td>
     <td><%= item.price %></td>
