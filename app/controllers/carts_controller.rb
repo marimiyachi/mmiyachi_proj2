@@ -97,4 +97,13 @@ class CartsController < ApplicationController
     @item.increment_quantity
     @cart_item.destroy
   end
+
+  # DELETE Cart Item object
+  # Create new Saved object
+  def save_item
+    @cart_item = CartItem.find_by_id(params[:id])
+    @item = Item.find_by_id(@cart_item.item_number)
+    @saved_item = current_storekeeper.saveds.create(item_id: @item.id)
+    @cart_item.destroy
+  end
 end

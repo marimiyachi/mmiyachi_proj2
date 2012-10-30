@@ -14,6 +14,7 @@ class Storekeeper < ActiveRecord::Base
   has_many :stores
   has_many :carts
   has_many :orders
+  has_many :saveds
 
   # returns a boolean true if a storekeeper has a store
   def store_exists

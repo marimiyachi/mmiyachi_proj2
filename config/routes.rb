@@ -1,4 +1,6 @@
 MmiyachiProj2::Application.routes.draw do
+  resources :saveds
+
   resources :carts
 
   root to: 'static_pages#home'
@@ -20,6 +22,8 @@ MmiyachiProj2::Application.routes.draw do
 
   match 'cartitem/:id/destroy' => 'carts#destroy_item', :as => :cart_destroy
   match 'items/:id/destroy' => 'items#destroy', :as => :item_destroy
+  match 'cartitem/:id/save' => 'carts#save_item', :as => :cart_save
+  match 'saved/:id/addcart' => 'saveds#add_cart', :as => :cart_add
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

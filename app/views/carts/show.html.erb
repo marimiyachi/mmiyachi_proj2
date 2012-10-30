@@ -15,6 +15,7 @@
     <th>Price</th>
     <th>Store</th>
     <th></th>
+    <th></th>
   </tr>
   <% @cart.cart_items.each do |item| %>
     <% if Item.find_by_id(item.item_number) %>
@@ -22,6 +23,7 @@
       <td><%= item.item_name %></td>
       <td>$<%= item.item_price %></td>
       <td><%= item.store_name %></td>
+      <td><%= link_to "Save for later", cart_save_url(:id => item.id) %></td>
       <td><%= link_to "Delete", cart_destroy_url(:id => item.id) %></td>
     </tr>
     <% end %>
@@ -31,6 +33,27 @@
     <td>Total: $<%= @t %></td>
     <td><%= link_to 'Checkout', checkout_url(:id => @cart.id), class: "btn btn-primary" %></td>
     <td></td>
+    <td></td>
   </table>
 <% end %>
 
+<% if current_storekeeper.saveds.any? %>
+<h3>Saved Items</h3>
+  <table class="table table-striped table-bordered">
+  <tr>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Store</th>
+    <th></th>
+  </tr>
+  <% current_storekeeper.saveds.each do |item| %>
+    <% if Item.find_by_id(item.item_id) %>
+    <tr>
+      <td><%= item.item_name %></td>
+      <td><%= item.item_price %></td>
+      <td><%= item.store_name %></td>
+      <td><%= link_to "Add to Cart", cart_add_url(:id => item.id) %></td>
+    </tr>
+    <% end %>
+  <% end %>
+<% end %>
