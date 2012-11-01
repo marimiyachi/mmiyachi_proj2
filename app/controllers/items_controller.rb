@@ -43,7 +43,6 @@ class ItemsController < ApplicationController
   # Adds Cart Item object to customer cart
   def basket
     @item = Item.find(params[:id])
-    @item.update_quantity
     @cart = Cart.find(params[:sid])
     @cart.add_item(@item)
 

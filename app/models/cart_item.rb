@@ -17,4 +17,9 @@ class CartItem < ActiveRecord::Base
   def store_name
     return Store.find_by_id(self.store_number).name
   end
+
+  # getter for item's quantity
+  def quantity
+    return Item.find_by_id(self.item_number).quantity
+  end
 end

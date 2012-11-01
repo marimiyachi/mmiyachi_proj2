@@ -42,7 +42,7 @@ class CartsController < ApplicationController
   def checkout
     @cart = Cart.find(params[:id])
     @customer = current_storekeeper
-    @cart.final_checkout(@customer)
+    @order = @cart.final_checkout(@customer)
   end
 
   # POST /carts

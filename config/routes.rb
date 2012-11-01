@@ -19,6 +19,7 @@ MmiyachiProj2::Application.routes.draw do
   match 'storekeepers/:id/basket' => 'items#basket', :as => :basket
   match 'storekepers/:id/checkout' => 'carts#checkout', :as => :checkout
   match 'storekeepers/:id/order' => 'storekeepers#order', :as => :order
+  match 'storekeepers/:id/fufill' => 'storekeepers#fufill', :as => :fufill
 
   match 'cartitem/:id/destroy' => 'carts#destroy_item', :as => :cart_destroy
   match 'items/:id/destroy' => 'items#destroy', :as => :item_destroy

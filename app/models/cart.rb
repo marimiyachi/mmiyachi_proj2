@@ -9,9 +9,11 @@ class Cart < ActiveRecord::Base
   def total(cart_items)
     total = 0
     cart_items.each do |item|
-      if Item.find_by_id(item.item_number)
-        item_price = Item.find_by_id(item.item_number).price
-        total = total + item_price
+      if item.quantity > 0
+        if Item.find_by_id(item.item_number)
+          item_price = Item.find_by_id(item.item_number).price
+          total = total + item_price
+        end
       end
     end
     return total
@@ -20,17 +22,24 @@ class Cart < ActiveRecord::Base
   # requires: customer who is checking out cart
   # modifies: cart items, adding each to a new order belong to the customer
   #           deletes cart items from customer cart
+  # returns: new order
   def final_checkout(customer)
     @order = customer.orders.new()
-    @order.update_attributes(customer_id: @customer, id: self.id)
+    @order.update_attributes(customer_id: @customer, id: self.id, status: "Pending")
     self.cart_items.each do |item|
       @item = @order.order_its.new()
       @original = Item.find_by_id(item.item_number)
-      @item.update_attributes(item_number: item.item_number,
+      if @original.quantity > 0
+        @item.update_attributes(item_number: item.item_number,
                               price: @original.price,
-                              name: @original.name)
+                              name: @original.name,
+                              status: "Pending",
+                              store_id: @original.store_id)
+        @original.update_quantity
+      end
       item.destroy
     end
+    return @order
   end
 
   # requires: item that is being added to the cart

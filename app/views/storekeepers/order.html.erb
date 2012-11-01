@@ -1,7 +1,7 @@
 <% provide(:title, 'Orders') %>
 <h3>Orders Placed in Your Store</h3>
 <br/>
-<% if current_storekeeper.orders.count > 0 %>
+<% if current_storekeeper.orders.any? %>
 <table class="table table-striped table-bordered">
 <tr>
   <th>Order Number</th>
@@ -20,7 +20,8 @@
       [<%= item.item_number %>] <%= item.name %>, $<%= item.price %> <br/>
       <% end %>
   <% end %></td>
-    <td><% link_to "Fufill order", '#' %></td>
+    <td><% if order.check_fufilled %>Order fufilled <% else %>
+    <%= link_to "Fufill order", fufill_url(:oid => order.id) %><% end %></td>
   </tr>
   <% end %>
   <% end %>
@@ -43,10 +44,10 @@
   <tr>
     <td><%= order.id %></td>
     <td><% order.order_its.each do |item| %>
-      [<%= item.item_number %>] <%= item.name %>, $<%= item.price %> <br/>
+      [<%= item.item_number %>] <%= item.name %>, $<%= item.price %> from <%= item.store_id %> <br/>
       <% end %>
     </td>
-    <td>STATUS</td>
+    <td><%= order.check_status%></td>
   </tr>
   <% end %><% end %>
 <% end %>

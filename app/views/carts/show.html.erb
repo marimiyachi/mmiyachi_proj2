@@ -21,8 +21,13 @@
     <% if Item.find_by_id(item.item_number) %>
     <tr>
       <td><%= item.item_name %></td>
+      <% if item.quantity > 0.to_i %>
       <td>$<%= item.item_price %></td>
       <td><%= item.store_name %></td>
+      <% else %>
+      <td>$0.00</td>
+      <td>No longer available</td>
+      <% end %>
       <td><%= link_to "Save for later", cart_save_url(:id => item.id) %></td>
       <td><%= link_to "Delete", cart_destroy_url(:id => item.id) %></td>
     </tr>
@@ -50,8 +55,13 @@
     <% if Item.find_by_id(item.item_id) %>
     <tr>
       <td><%= item.item_name %></td>
-      <td><%= item.item_price %></td>
+      <% if item.quantity > 0.to_i %>
+      <td>$<%= item.item_price %></td>
       <td><%= item.store_name %></td>
+      <% else %>
+      <td>$0.00</td>
+      <td>No longer available</td>
+      <% end %>
       <td><%= link_to "Add to Cart", cart_add_url(:id => item.id) %></td>
     </tr>
     <% end %>

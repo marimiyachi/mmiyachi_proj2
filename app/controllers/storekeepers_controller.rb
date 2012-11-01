@@ -31,6 +31,14 @@ class StorekeepersController < ApplicationController
     @orders = Order.all
   end
 
+  # Fufill order
+  # Change status of relevant order items to "Fufilled"
+  def fufill
+    @order = Order.find(params[:oid])
+    @storekeeper = Storekeeper.find(params[:id])
+    @order.fufill(@storekeeper)
+  end
+
   # GET /storekeepers/new
   # GET /storekeepers/new.json
   # create cart at the same time as storekeeper object
