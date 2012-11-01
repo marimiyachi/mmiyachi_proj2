@@ -25,7 +25,10 @@ class Cart < ActiveRecord::Base
     @order.update_attributes(customer_id: @customer, id: self.id)
     self.cart_items.each do |item|
       @item = @order.order_its.new()
-      @item.update_attributes(item_number: item.item_number)
+      @original = Item.find_by_id(item.item_number)
+      @item.update_attributes(item_number: item.item_number,
+                              price: @original.price,
+                              name: @original.name)
       item.destroy
     end
   end

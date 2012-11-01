@@ -7,6 +7,7 @@
   <th>Order Number</th>
   <th>Customer Info</th>
   <th>Item Info</th>
+  <th></th>
 </tr>
 <% @orders.each do |order| %>
   <% if order.order_its.any? %>
@@ -15,11 +16,11 @@
     <td><%= order.id %></td>
     <td><%= order.customer_name %>, <%= order.customer_email %></td>
     <td><% order.order_its.each do |item| %>
-      <% if Item.find_by_id(item.item_number) %>
       <% if Item.find_by_id(item.item_number).store_id == @storekeeper.stores.first.id %>
-      [<%= item.item_number %>] <%= item.item_name %> <br/>
-      <% end %><% end %>
+      [<%= item.item_number %>] <%= item.name %>, $<%= item.price %> <br/>
+      <% end %>
   <% end %></td>
+    <td><% link_to "Fufill order", '#' %></td>
   </tr>
   <% end %>
   <% end %>
@@ -34,6 +35,7 @@
 <tr>
   <th>Order Number</th>
   <th>Item Info</th>
+  <th>Status</th>
 </tr>
 <% @orders.each do |order| %>
   <% if order.order_its.any? %>
@@ -41,10 +43,10 @@
   <tr>
     <td><%= order.id %></td>
     <td><% order.order_its.each do |item| %>
-      <% if Item.find_by_id(item.item_number) %>
-      [<%= item.item_number %>] <%= item.item_name %> <br/>
-      <% end %><% end %>
-  </td>
+      [<%= item.item_number %>] <%= item.name %>, $<%= item.price %> <br/>
+      <% end %>
+    </td>
+    <td>STATUS</td>
   </tr>
   <% end %><% end %>
 <% end %>
