@@ -1,4 +1,8 @@
 class CartsController < ApplicationController
+  # authenticate storkeeper
+  before_filter :signed_in_user, only: [:edit, :update, :show]
+  before_filter :correct_user, only: [:edit, :update, :show]
+
   # GET /carts
   # GET /carts.json
   def index
@@ -96,6 +100,7 @@ class CartsController < ApplicationController
     @item = Item.find_by_id(@cart_item.item_number)
     @item.increment_quantity
     @cart_item.destroy
+    redirect_to :back
   end
 
   # DELETE Cart Item object
@@ -105,5 +110,21 @@ class CartsController < ApplicationController
     @item = Item.find_by_id(@cart_item.item_number)
     @saved_item = current_storekeeper.saveds.create(item_id: @item.id)
     @cart_item.destroy
+    redirect_to :back
   end
+
+  private
+
+    # authenticate storekeeper
+    # allows access to only signed in users
+    def signed_in_user
+      redirect_to signin_url, notice: "Please sign in." unless signed_in?
+    end
+
+    # allows access to only specific users
+    def correct_user
+      @cart = Cart.find(params[:id])
+      @storekeeper = Storekeeper.find_by_id(@cart.storekeeper_id)
+      redirect_to(root_path) unless current_storekeeper?(@storekeeper)
+    end
 end

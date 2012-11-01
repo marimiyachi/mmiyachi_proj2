@@ -1,25 +1,4 @@
 class SavedsController < ApplicationController
-  # GET /saveds
-  # GET /saveds.json
-  def index
-    @saveds = Saved.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @saveds }
-    end
-  end
-
-  # GET /saveds/1
-  # GET /saveds/1.json
-  def show
-    @saved = Saved.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @saved }
-    end
-  end
 
   # GET /saveds/new
   # GET /saveds/new.json
@@ -45,6 +24,7 @@ class SavedsController < ApplicationController
     @item = Item.find_by_id(@saved.item_id)
     @cart.add_item(@item)
     @saved.destroy
+    redirect_to :back
   end
 
   # POST /saveds

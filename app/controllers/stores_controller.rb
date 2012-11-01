@@ -1,4 +1,7 @@
 class StoresController < ApplicationController
+  # authenticate storekeepers
+  before_filter :signed_in_user, only: [:edit, :update, :show]
+  before_filter :correct_user, only: [:edit, :update, :show]
 
   # GET /stores
   # GET /stores.json
@@ -100,6 +103,8 @@ class StoresController < ApplicationController
 
     # redirect if user is accessing material they don't own
     def correct_user
-      redirect_to root_path, notice: "Restricted access." unless current_storekeeper?(Storekeeper.find(params[:id]))
+      @store = Store.find(params[:id])
+      @storekeeper = Storekeeper.find_by_id(@store.storekeeper_id)
+      redirect_to root_path, notice: "Restricted access." unless current_storekeeper?(@storekeeper)
     end
 end

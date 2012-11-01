@@ -45,11 +45,7 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
     @cart = Cart.find(params[:sid])
     @cart.add_item(@item)
-
-    respond_to do |format|
-      format.html
-      format.json { render json: @cart }
-    end
+    redirect_to @cart
   end
 
   # POST /items

@@ -17,7 +17,7 @@
     <td><%= order.customer_name %>, <%= order.customer_email %></td>
     <td><% order.order_its.each do |item| %>
       <% if Item.find_by_id(item.item_number).store_id == @storekeeper.stores.first.id %>
-      [<%= item.item_number %>] <%= item.name %>, $<%= item.price %> <br/>
+      [<%= item.item_number %>] <%= item.name %>, $<%= number_with_precision item.price, :precision => 2 %> <br/>
       <% end %>
   <% end %></td>
     <td><% if order.check_fufilled %>Order fufilled <% else %>
@@ -44,7 +44,7 @@
   <tr>
     <td><%= order.id %></td>
     <td><% order.order_its.each do |item| %>
-      [<%= item.item_number %>] <%= item.name %>, $<%= item.price %> from <%= item.store_id %> <br/>
+      [<%= item.item_number %>] <%= item.name %>, $<%= number_with_precision item.price, :precision => 2 %> from <%= item.store_name %> <br/>
       <% end %>
     </td>
     <td><%= order.check_status%></td>
