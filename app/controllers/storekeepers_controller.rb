@@ -2,6 +2,8 @@ class StorekeepersController < ApplicationController
   before_filter :signed_in_user, only: [:edit, :update, :show, :order]
   before_filter :correct_user, only: [:edit, :update, :show, :order]
 
+  protect_from_forgery :secret => "1234567890"
+
   # GET /storekeepers
   # GET /storekeepers.json
   def index
