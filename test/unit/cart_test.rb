@@ -27,4 +27,12 @@ class CartTest < ActiveSupport::TestCase
     assert_equal 0, cart.cart_items.count
   end
 
+  # test the add_item function
+  def test_add_item
+    storekeeper = storekeepers(:one)
+    new_cart = storekeeper.carts.create()
+    item = items(:one)
+    new_cart.add_item(item)
+    assert_equal item.name, new_cart.cart_items.first.item_name
+  end
 end

@@ -20,4 +20,20 @@ class ItemTest < ActiveSupport::TestCase
     assert_equal cart.cart_items.first.item_number, item.id
   end
 
+  # test decrementing item quantity
+  def test_decrement
+    item = items(:one)
+    new_quantity = item.quantity.to_i - 1 
+    item.update_quantity
+    assert_equal new_quantity, item.quantity
+  end
+
+  # test incrementing item quantity
+  def test_increment
+    item = items(:one)
+    new_quantity = item.quantity.to_i + 1
+    item.increment_quantity
+    assert_equal new_quantity, item.quantity
+  end
+
 end

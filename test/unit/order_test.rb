@@ -26,4 +26,21 @@ class OrderTest < ActiveSupport::TestCase
     order.fufill(storekeepers(:one))
     assert_equal "Fufilled", item.status
   end
+
+  # test getters for customer info
+  def test_customer
+    storekeeper = storekeepers(:one)
+    order = storekeeper.orders.create()
+    assert_equal storekeeper.name, order.customer_name
+    assert_equal storekeeper.email, order.customer_email
+  end
+
+  # test status check function
+  def test_status
+    order = orders(:one)
+    order.order_its.create(status: "Pending")
+    order.order_its.create(status: "Fufilled")
+    assert_equal "Pending", order.check_status
+  end
+
 end
