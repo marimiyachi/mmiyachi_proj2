@@ -2,7 +2,6 @@ class StoresController < ApplicationController
   # GET /stores
   # Requires: user logged in
   # Effects: returns list of all stores
-  # ???
   def index
     @stores = Store.all
 
@@ -12,22 +11,9 @@ class StoresController < ApplicationController
     end
   end
 
-  # GET /stores/1
-  # Requires: user logged in and store with store_id exists
-  # Effects: returns store information for specified store
-#  def show
- #   @store = Store.find(params[:id])
-  #  @items = @store.items
-
-   # respond_to do |format|
-    #  format.html # show.html.erb
-    #  format.json { render json: @store }
-   # end
-  #end
-
-  # GET /stores/shop
-  # Requires: user logged in
-  # Effects: provide information about all stores and items
+  # GET /stores/id
+  # Requires: user logged in and store exists with store_id
+  # Effects: provide information about specified store
   def shop
     @store = Store.find(params[:id])
     @items = @store.items
@@ -89,17 +75,5 @@ class StoresController < ApplicationController
     end
   end
 
-  # DELETE /stores/1
-  # Requires: user logged in
-  # ???
-  def destroy
-    @store = Store.find(params[:id])
-    @store.destroy
-
-    respond_to do |format|
-      format.html { redirect_to stores_url }
-      format.json { head :no_content }
-    end
-  end
 
 end

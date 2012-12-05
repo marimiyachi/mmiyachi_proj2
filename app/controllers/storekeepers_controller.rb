@@ -1,6 +1,6 @@
 class StorekeepersController < ApplicationController
-  before_filter :signed_in_user, only: [:edit, :update, :show, :order]
-  before_filter :correct_user, only: [:edit, :update, :show, :order]
+  before_filter :signed_in_user, only: [:show]
+  before_filter :correct_user, only: [:show]
 
   protect_from_forgery :secret => "1234567890"
 
@@ -19,7 +19,7 @@ class StorekeepersController < ApplicationController
     end
   end
 
-  # POST /storekeepers/id/fufill_order
+  # POST /storekeepers/id/fufill
   # Requires: user signed in and order place in user's store
   # Modifies: Order_its, Orders
   # Effects: change status of relevant order items to "Fufilled"
@@ -43,13 +43,6 @@ class StorekeepersController < ApplicationController
     end
   end
 
-  # GET /storekeepers/1/edit
-  # Requires: user logged in and matches user_id
-  # Effects: returns form to edit user attributes
-  def edit
-    @storekeeper = Storekeeper.find(params[:id])
-  end
-
   # POST /storekeepers
   # Requires: valid user information
   # Modifies: Storekeepers, Carts
@@ -64,37 +57,6 @@ class StorekeepersController < ApplicationController
       render 'new'
     end
   end
-
-  # PUT /storekeepers/1
-  # Requires: user logged in and matches user_id
-  # Modifies: Storekeepers
-  # Effects: updates user attributes as specified
-  def update
-    @storekeeper = Storekeeper.find(params[:id])
-
-    respond_to do |format|
-      if @storekeeper.update_attributes(params[:storekeeper])
-        format.html { redirect_to @storekeeper, notice: 'Storekeeper was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @storekeeper.errors, status: :unprocessable_entity }
-      end
-    end
-  end
-
-  # DELETE /storekeepers/1
-  # DELETE /storekeepers/1.json
-  # ???
- # def destroy
- #   @storekeeper = Storekeeper.find(params[:id])
- #   @storekeeper.destroy
-
- #   respond_to do |format|
- #     format.html { redirect_to storekeepers_url }
- #     format.json { head :no_content }
- #   end
- # end
 
   # Authenticate users
   private

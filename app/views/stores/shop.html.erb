@@ -19,7 +19,7 @@
     <td><%= number_with_precision item.price, :precision => 2 %></td>
     <td><%= item.quantity %></td>
     <td><%= item.description %></td>
-    <td><%= link_to 'Add to Basket', basket_url(:id => item.id, :sid => @current_storekeeper.id) %>
+    <td><%= link_to 'Add to Basket', basket_url(:id => item.id, :sid => @current_storekeeper.id), :method=>:post %>
   </tr>
   <% end %><% end %>
 </table>

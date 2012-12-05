@@ -9,7 +9,7 @@ class Item < ActiveRecord::Base
     self.update_attributes(quantity: q)
   end
 
-  # increment teh quantity
+  # increment the quantity
   def increment_quantity
     q = self.quantity.to_i + 1
     self.update_attributes(quantity: q)

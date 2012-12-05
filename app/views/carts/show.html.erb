@@ -24,8 +24,8 @@
       <td>$0.00</td>
       <td>No longer available</td>
       <% end %>
-      <td><%= link_to "Save for later", cart_save_url(:id => item.id) %></td>
-      <td><%= link_to "Delete", cart_destroy_url(:id => item.id) %></td>
+      <td><%= link_to "Save for later", cart_save_url(:id => item.id), :method=>:post %></td>
+      <td><%= link_to "Delete", cart_destroy_url(:id => item.id), :method=>:post %></td>
     </tr>
     <% end %>
   <% end %>
@@ -61,7 +61,7 @@ Nothing in your shopping cart yet!
       <td>$0.00</td>
       <td>No longer available</td>
       <% end %>
-      <td><%= link_to "Add to Cart", cart_add_url(:id => item.id) %></td>
+      <td><%= link_to "Add to Cart", cart_add_url(:id => item.id), :method=>:post %></td>
     </tr>
     <% end %>
   <% end %>

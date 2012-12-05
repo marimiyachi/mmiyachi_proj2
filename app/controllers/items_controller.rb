@@ -1,19 +1,5 @@
 class ItemsController < ApplicationController
 
-  # index???
-
-  # GET /items/1
-  # Requires: user logged in and item with id exists
-  # Effects: returns page with full item attribute information
-  def show
-    @item = Item.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @item }
-    end
-  end
-
   # GET /items/new
   # Requires: user logged in and owns store
   # Effects: returns form to create new item

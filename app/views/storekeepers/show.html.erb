@@ -79,7 +79,7 @@
                                 <% end %>
                             <% end %></td>
                           <td><% if order.check_fufilled %>Order fufilled <% else %>
-                                <%= link_to "Fufill order", fufill_url(:oid => order.id) %><% end %></td>
+                                <%= link_to "Fufill order", fufill_url(:oid => order.id), :method=> :post %><% end %></td>
                         </tr>
                     <% end %>
                 <% end %>
