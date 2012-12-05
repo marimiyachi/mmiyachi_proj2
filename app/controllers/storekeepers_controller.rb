@@ -1,6 +1,6 @@
 class StorekeepersController < ApplicationController
-  before_filter :signed_in_user, only: [:show]
-  before_filter :correct_user, only: [:show]
+  before_filter :signed_in_user, only: [:show, :cart]
+  before_filter :correct_user, only: [:show, :cart]
 
   protect_from_forgery :secret => "1234567890"
 
@@ -56,6 +56,30 @@ class StorekeepersController < ApplicationController
     else
       render 'new'
     end
+  end
+
+  # GET /storekeepers/id/cart
+  # Requires: user logged in
+  # Effects: returns cart information for given user
+  def cart
+    @storekeeper = Storekeeper.find(params[:id])
+    @cart_items = @storekeeper.cart_items
+    @t = @storekeeper.total
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @cart }
+    end
+  end
+
+  # Processes the cart for final checkout
+  # POST /storekeeper/id/checkout
+  # Requires: user logged in, owns cart, and at least one item in cart with quantity > 0
+  # Modifies: cart_items, orders, and order_items
+  # Effects: creates order from cart that can be viewed by user
+  def checkout
+    @storekeeper = Storekeeper.find(params[:id])
+    @order = @storekeeper.final_checkout(current_storekeeper)
   end
 
 end

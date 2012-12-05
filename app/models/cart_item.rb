@@ -1,7 +1,7 @@
 class CartItem < ActiveRecord::Base
-  attr_accessible :item_number, :store_number
+  attr_accessible :item_number, :store_number, :storekeeper_id
 
-  belongs_to :cart
+  belongs_to :storekeeper
 
   # getter for item name
   def item_name

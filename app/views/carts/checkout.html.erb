@@ -1,9 +1,0 @@
-<% provide(:title, 'Success') %>
-<p> You have successfully checked out! </p>
-<p>The following items were purchased. If any items seem to be missing,
-it is because they were sold out. We apologize for the inconvenience. </p>
-<% if @order.order_its.any? %>
-<p>Your order number is <%= @order.id %>.</p>
-<% @order.order_its.each do |item| %>
-<p><%= item.name %> (<%= item.price %>)</p>
-<% end %><% end %>

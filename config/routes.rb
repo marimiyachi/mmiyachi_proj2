@@ -15,14 +15,16 @@ MmiyachiProj2::Application.routes.draw do
   match '/signout', to: 'sessions#destroy', via: :delete
 
   match 'stores/:id/shop' => 'stores#shop', :as => :shop
-  match 'storekeepers/:id/cart' => 'carts#show', :as => :shopping_cart
+  #match 'storekeepers/:id/cart' => 'carts#show', :as => :shopping_cart
+  match 'storekeepers/:id/cart' => 'storekeepers#cart', :as => :shopping_cart
   match 'storekeepers/:id/basket' => 'items#basket', :as => :basket
-  match 'storekeepers/:id/checkout' => 'carts#checkout', :as => :checkout
+  #match 'storekeepers/:id/checkout' => 'carts#checkout', :as => :checkout
+  match 'storekeepers/:id/checkout' => 'storekeepers#checkout', :as => :checkout
   match 'storekeepers/:id/fufill' => 'storekeepers#fufill', :as => :fufill
 
-  match 'cartitem/:id/destroy' => 'carts#destroy_item', :as => :cart_destroy
+  match 'cartitem/:id/destroy' => 'cart_items#destroy_item', :as => :cart_destroy
   match 'items/:id/destroy' => 'items#destroy', :as => :item_destroy
-  match 'cartitem/:id/save' => 'carts#save_item', :as => :cart_save
+  match 'cartitem/:id/save' => 'cart_items#save_item', :as => :cart_save
   match 'saved/:id/addcart' => 'saveds#add_cart', :as => :cart_add
 
   # The priority is based upon order of creation:

@@ -14,9 +14,9 @@ class ItemsController < ApplicationController
   # Effects: places item into customer cart
   def basket
     @item = Item.find(params[:id])
-    @cart = Cart.find(params[:sid])
-    @cart.add_item(@item)
-    redirect_to @cart
+    @storekeeper = Storekeeper.find_by_id(params[:sid])
+    @storekeeper.add_item(@item)
+    redirect_to shopping_cart_url(@storekeeper)
   end
 
   # POST /items
