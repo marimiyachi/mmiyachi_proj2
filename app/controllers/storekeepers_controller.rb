@@ -10,8 +10,9 @@ class StorekeepersController < ApplicationController
   def show
     @storekeeper = Storekeeper.find(params[:id])
     @store = @storekeeper.stores.first
-    @items = @store.items
+    #@items = @store.items
     @orders = Order.all
+    @item = Item.new
 
     respond_to do |format|
       format.html # show.html.erb

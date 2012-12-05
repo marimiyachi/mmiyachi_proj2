@@ -1,17 +1,5 @@
 class ItemsController < ApplicationController
 
-  # GET /items/new
-  # Requires: user logged in and owns store
-  # Effects: returns form to create new item
-  def new
-    @item = Item.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @item }
-    end
-  end
-
   # GET /items/1/edit
   # Requires: user logged in and owns store with item
   # Effects: returns form to edit given item
@@ -20,10 +8,10 @@ class ItemsController < ApplicationController
     @store = Store.find_by_id(@item.store_id)
   end
 
-  #  ????
-  # Places item into customer cart
-  # Updates the quantity of the Item object
-  # Adds Cart Item object to customer cart
+  # POST /storekeepers/id/basket
+  # Requires: user logged in
+  # Modifies: Cart_items
+  # Effects: places item into customer cart
   def basket
     @item = Item.find(params[:id])
     @cart = Cart.find(params[:sid])
@@ -40,11 +28,8 @@ class ItemsController < ApplicationController
 
     respond_to do |format|
       if @item.save
-        format.html { redirect_to @item, notice: 'Item was successfully created.' }
+        format.html { redirect_to :back, notice: 'Item was successfully created.' }
         format.json { render json: @item, status: :created, location: @item }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @item.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -58,7 +43,7 @@ class ItemsController < ApplicationController
 
     respond_to do |format|
       if @item.update_attributes(params[:item])
-        format.html { redirect_to @item, notice: 'Item was successfully updated.' }
+        format.html { redirect_to current_storekeeper, notice: 'Item was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
