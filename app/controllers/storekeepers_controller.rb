@@ -10,7 +10,6 @@ class StorekeepersController < ApplicationController
   def show
     @storekeeper = Storekeeper.find(params[:id])
     @store = @storekeeper.stores.first
-    #@items = @store.items
     @orders = Order.all
     @item = Item.new
 
@@ -59,15 +58,4 @@ class StorekeepersController < ApplicationController
     end
   end
 
-  # Authenticate users
-  private
-    # redirect if user is not logged in
-    def signed_in_user
-      redirect_to storekeepersignup_path, notice: "Please sign in." unless signed_in?
-    end
-
-    # redirect if user is accessing material they don't own
-    def correct_user
-      redirect_to root_path, notice: "Restricted access." unless current_storekeeper?(Storekeeper.find(params[:id]))
-    end
 end

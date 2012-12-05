@@ -1,4 +1,6 @@
 class CartsController < ApplicationController
+  before_filter :signed_in_user, only: [:show]
+  before_filter :correct_user, only: [:show]
 
   # GET /carts/1
   # Requires: user logged in

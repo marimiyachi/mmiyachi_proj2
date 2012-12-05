@@ -1,4 +1,6 @@
 class StoresController < ApplicationController
+  before_filter :signed_in_user, only: [:index, :shop]
+
   # GET /stores
   # Requires: user logged in
   # Effects: returns list of all stores
