@@ -2,6 +2,7 @@ class SavedsController < ApplicationController
 
   # GET /saveds/new
   # GET /saveds/new.json
+  #???
   def new
     @saved = Saved.new
 
@@ -12,12 +13,14 @@ class SavedsController < ApplicationController
   end
 
   # GET /saveds/1/edit
-  def edit
-    @saved = Saved.find(params[:id])
-  end
+ # def edit
+  #  @saved = Saved.find(params[:id])
+ # end
 
-  # remove from saved
-  # add back to cart
+  # POST /carts/id/saved_items/saved_item_id
+  # Requires: user logged in, owns cart, and saved item in saved list
+  # Modifies: Cart_items, Saveds
+  # Effects: deletes saved item and add cart_item to user's cart that points to corresponding item
   def add_cart
     @saved = Saved.find(params[:id])
     @cart = Cart.find_by_storekeeper_id(current_storekeeper.id)
@@ -28,7 +31,10 @@ class SavedsController < ApplicationController
   end
 
   # POST /saveds
-  # POST /saveds.json
+  # Requires: user logged in
+  # Modifies: Saveds
+  # Effects: creates new saved item
+  # ????
   def create
     @saved = Saved.new(params[:saved])
 
@@ -45,22 +51,22 @@ class SavedsController < ApplicationController
 
   # PUT /saveds/1
   # PUT /saveds/1.json
-  def update
-    @saved = Saved.find(params[:id])
+#  def update
+ #   @saved = Saved.find(params[:id])
 
-    respond_to do |format|
-      if @saved.update_attributes(params[:saved])
-        format.html { redirect_to @saved, notice: 'Saved was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @saved.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+ #   respond_to do |format|
+  #    if @saved.update_attributes(params[:saved])
+ #       format.html { redirect_to @saved, notice: 'Saved was successfully updated.' }
+  #      format.json { head :no_content }
+  #    end
+  #  end
+ # end
 
   # DELETE /saveds/1
-  # DELETE /saveds/1.json
+  # Requires: user logged in, saveds belongs to user
+  # Modifies: Saveds
+  # Effects: deletes saved item
+  # ???
   def destroy
     @saved = Saved.find(params[:id])
     @saved.destroy

@@ -1,17 +1,10 @@
 class ItemsController < ApplicationController
-  # GET /items
-  # GET /items.json
-  def index
-    @items = Item.all
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @items }
-    end
-  end
+  # index???
 
   # GET /items/1
-  # GET /items/1.json
+  # Requires: user logged in and item with id exists
+  # Effects: returns page with full item attribute information
   def show
     @item = Item.find(params[:id])
 
@@ -22,7 +15,8 @@ class ItemsController < ApplicationController
   end
 
   # GET /items/new
-  # GET /items/new.json
+  # Requires: user logged in and owns store
+  # Effects: returns form to create new item
   def new
     @item = Item.new
 
@@ -33,11 +27,14 @@ class ItemsController < ApplicationController
   end
 
   # GET /items/1/edit
+  # Requires: user logged in and owns store with item
+  # Effects: returns form to edit given item
   def edit
     @item = Item.find(params[:id])
     @store = Store.find_by_id(@item.store_id)
   end
 
+  #  ????
   # Places item into customer cart
   # Updates the quantity of the Item object
   # Adds Cart Item object to customer cart
@@ -49,7 +46,9 @@ class ItemsController < ApplicationController
   end
 
   # POST /items
-  # POST /items.json
+  # Requires: user logged in and owns store
+  # Modifies: Items
+  # Effects: creates new item in store and redirects to the item's page
   def create
     @item = current_storekeeper.stores.first.items.build(params[:item])
 
@@ -65,7 +64,9 @@ class ItemsController < ApplicationController
   end
 
   # PUT /items/1
-  # PUT /items/1.json
+  # Requires: user logged in and owns store and item with id exists
+  # Modifies; Items
+  # Effects: updates attributes of specified item
   def update
     @item = Item.find(params[:id])
 
@@ -81,7 +82,9 @@ class ItemsController < ApplicationController
   end
 
   # DELETE /items/1
-  # DELETE /items/1.json
+  # Requires: user logged in and owns store adn item with id exists
+  # Modifies: Items
+  # Effects: item deleted from database and redirected to home page
   def destroy
     @item = Item.find(params[:id])
     @item.destroy

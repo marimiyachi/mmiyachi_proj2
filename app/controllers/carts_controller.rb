@@ -1,21 +1,8 @@
 class CartsController < ApplicationController
-  # authenticate storkeeper
-  before_filter :signed_in_user, only: [:edit, :update, :show]
-  before_filter :correct_user, only: [:edit, :update, :show]
-
-  # GET /carts
-  # GET /carts.json
-  def index
-    @carts = Cart.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @carts }
-    end
-  end
 
   # GET /carts/1
-  # GET /carts/1.json
+  # Requires: user logged in
+  # Effects: returns cart information for given user
   def show
     @cart = Cart.find(params[:id])
     @t = @cart.total(@cart.cart_items)
@@ -28,6 +15,7 @@ class CartsController < ApplicationController
 
   # GET /carts/new
   # GET /carts/new.json
+  # ???
   def new
     @cart = Cart.new
 
@@ -38,11 +26,15 @@ class CartsController < ApplicationController
   end
 
   # GET /carts/1/edit
-  def edit
-    @cart = Cart.find(params[:id])
-  end
+  #def edit
+   # @cart = Cart.find(params[:id])
+ # end
 
   # Processes the cart for final checkout
+  # POST /carts/id/checkout
+  # Requires: user logged in, owns cart, and at least one item in cart with quantity > 0
+  # Modifies: cart_items, orders, and order_items
+  # Effects: creates order from cart that can be viewed by user
   def checkout
     @cart = Cart.find(params[:id])
     @customer = current_storekeeper
@@ -50,7 +42,9 @@ class CartsController < ApplicationController
   end
 
   # POST /carts
-  # POST /carts.json
+  # Requires: user logged in
+  # Modifies: Carts
+  # Effects: creates cart belonging to current user
   def create
     @cart = current_storekeeper.carts.build(params[:cart])
 
@@ -66,35 +60,21 @@ class CartsController < ApplicationController
   end
 
   # PUT /carts/1
-  # PUT /carts/1.json
-  def update
-    @cart = Cart.find(params[:id])
+#  def update
+#    @cart = Cart.find(params[:id])
 
-    respond_to do |format|
-      if @cart.update_attributes(params[:cart])
-        format.html { redirect_to @cart, notice: 'Cart was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @cart.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+ #   respond_to do |format|
+ #     if @cart.update_attributes(params[:cart])
+ #       format.html { redirect_to @cart, notice: 'Cart was successfully updated.' }
+  #      format.json { head :no_content }
+ #     end
+ #   end
+ # end
 
-  # DELETE /carts/1
-  # DELETE /carts/1.json
-  def destroy
-    @cart = Cart.find(params[:id])
-    @cart.destroy
-
-    respond_to do |format|
-      format.html { redirect_to carts_url }
-      format.json { head :no_content }
-    end
-  end
-
-  # DELETE Cart Item object
-  # Increment the Item object quantity
+  # DELETE /carts/id/cart_items/cart_item_id
+  # Requires: user logged in, owns cart and cart_item in cart
+  # Modifies: Cart_items, Items
+  # Effects: deletes the specified cart item and increments the quantity of the item it pointed to
   def destroy_item
     @cart_item = CartItem.find_by_id(params[:id])
     @item = Item.find_by_id(@cart_item.item_number)
@@ -103,8 +83,10 @@ class CartsController < ApplicationController
     redirect_to :back
   end
 
-  # DELETE Cart Item object
-  # Create new Saved object
+  # POST /carts/id/save_item/cart_item_id
+  # Requires: user logged in, owns cart and cart_item in cart
+  # Modifies: Cart_items, Saved_items
+  # Effects: deletes the specified cart item and creates a saved item that points to the same item
   def save_item
     @cart_item = CartItem.find_by_id(params[:id])
     @item = Item.find_by_id(@cart_item.item_number)
@@ -112,19 +94,4 @@ class CartsController < ApplicationController
     @cart_item.destroy
     redirect_to :back
   end
-
-  private
-
-    # authenticate storekeeper
-    # allows access to only signed in users
-    def signed_in_user
-      redirect_to signin_url, notice: "Please sign in." unless signed_in?
-    end
-
-    # allows access to only specific users
-    def correct_user
-      @cart = Cart.find(params[:id])
-      @storekeeper = Storekeeper.find_by_id(@cart.storekeeper_id)
-      redirect_to(root_path) unless current_storekeeper?(@storekeeper)
-    end
 end

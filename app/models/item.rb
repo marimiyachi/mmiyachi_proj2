@@ -4,7 +4,7 @@ class Item < ActiveRecord::Base
   belongs_to :store
 
   # decrement the quantity
-  def update_quantity
+  def decrement_quantity
     q = self.quantity.to_i - 1
     self.update_attributes(quantity: q)
   end

@@ -4,22 +4,14 @@ class StorekeepersController < ApplicationController
 
   protect_from_forgery :secret => "1234567890"
 
-  # GET /storekeepers
-  # GET /storekeepers.json
-  def index
-    @storekeepers = Storekeeper.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @storekeepers }
-    end
-  end
-
   # GET /storekeepers/1
-  # GET /storekeepers/1.json
+  # Requires: user signed in and matches user_id
+  # Effects: returns storekeeper information
   def show
     @storekeeper = Storekeeper.find(params[:id])
-    @stores = @storekeeper.stores
+    @store = @storekeeper.stores.first
+    @items = @store.items
+    @orders = Order.all
 
     respond_to do |format|
       format.html # show.html.erb
@@ -27,14 +19,10 @@ class StorekeepersController < ApplicationController
     end
   end
 
-  # Provides data to view incoming orders
-  def order
-    @storekeeper = Storekeeper.find(params[:id])
-    @orders = Order.all
-  end
-
-  # Fufill order
-  # Change status of relevant order items to "Fufilled"
+  # POST /storekeepers/id/fufill_order
+  # Requires: user signed in and order place in user's store
+  # Modifies: Order_its, Orders
+  # Effects: change status of relevant order items to "Fufilled"
   def fufill
     @order = Order.find(params[:oid])
     @storekeeper = Storekeeper.find(params[:id])
@@ -43,8 +31,8 @@ class StorekeepersController < ApplicationController
   end
 
   # GET /storekeepers/new
-  # GET /storekeepers/new.json
-  # create cart at the same time as storekeeper object
+  # Requires: user logged out
+  # Effects: returns form to create new user account
   def new
     @storekeeper = Storekeeper.new
     @cart = Cart.new
@@ -56,12 +44,16 @@ class StorekeepersController < ApplicationController
   end
 
   # GET /storekeepers/1/edit
+  # Requires: user logged in and matches user_id
+  # Effects: returns form to edit user attributes
   def edit
     @storekeeper = Storekeeper.find(params[:id])
   end
 
   # POST /storekeepers
-  # POST /storekeepers.json
+  # Requires: valid user information
+  # Modifies: Storekeepers, Carts
+  # Effects: creates user with given attributes and cart belonging to the user and redirects to user profile
   def create
     @storekeeper = Storekeeper.new(params[:storekeeper])
     @cart = @storekeeper.carts.build(params[:cart])
@@ -74,7 +66,9 @@ class StorekeepersController < ApplicationController
   end
 
   # PUT /storekeepers/1
-  # PUT /storekeepers/1.json
+  # Requires: user logged in and matches user_id
+  # Modifies: Storekeepers
+  # Effects: updates user attributes as specified
   def update
     @storekeeper = Storekeeper.find(params[:id])
 
@@ -91,15 +85,16 @@ class StorekeepersController < ApplicationController
 
   # DELETE /storekeepers/1
   # DELETE /storekeepers/1.json
-  def destroy
-    @storekeeper = Storekeeper.find(params[:id])
-    @storekeeper.destroy
+  # ???
+ # def destroy
+ #   @storekeeper = Storekeeper.find(params[:id])
+ #   @storekeeper.destroy
 
-    respond_to do |format|
-      format.html { redirect_to storekeepers_url }
-      format.json { head :no_content }
-    end
-  end
+ #   respond_to do |format|
+ #     format.html { redirect_to storekeepers_url }
+ #     format.json { head :no_content }
+ #   end
+ # end
 
   # Authenticate users
   private

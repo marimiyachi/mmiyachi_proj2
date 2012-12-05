@@ -1,22 +1,10 @@
 <% provide(:title, 'Shop') %>
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Name:</b>
-  <%= @store.name %>
-</p>
+<h3><%= @store.name %></h3>
+<h5><%= @store.description %></h5><br/>
 
-<p>
-  <b>Description:</b>
-  <%= @store.description %>
-</p>
-
-
-<%= link_to 'Back', stores_path %>
-<br/><br/>
-
-<% if @store.items.any? %>
-<h3>Items (<%= @store.items.count %>)</h3><br/>
+<% if @store.items_available %>
 <table class="table table-striped table-bordered">
   <tr>
     <th>Name</th>
@@ -35,4 +23,7 @@
   </tr>
   <% end %><% end %>
 </table>
+
+<% else %>
+<p>No items available at this time. Please check back later.</p>
 <% end %>

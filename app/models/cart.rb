@@ -35,7 +35,7 @@ class Cart < ActiveRecord::Base
                               name: @original.name,
                               status: "Pending",
                               store_id: @original.store_id)
-        @original.update_quantity
+        @original.decrement_quantity
       end
       item.destroy
     end

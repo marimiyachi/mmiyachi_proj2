@@ -10,15 +10,14 @@ MmiyachiProj2::Application.routes.draw do
   resources :storekeepers
   resources :sessions
 
-  match '/storekeepersignup', to: 'storekeepers#new'
-  match '/storekeepersignin', to: 'sessions#new'
-  match '/storekeepersignout', to: 'sessions#destroy', via: :delete
+  match '/signup', to: 'storekeepers#new'
+  match '/signin', to: 'sessions#new'
+  match '/signout', to: 'sessions#destroy', via: :delete
 
   match 'stores/:id/shop' => 'stores#shop', :as => :shop
   match 'storekeepers/:id/cart' => 'carts#show', :as => :shopping_cart
   match 'storekeepers/:id/basket' => 'items#basket', :as => :basket
   match 'storekepers/:id/checkout' => 'carts#checkout', :as => :checkout
-  match 'storekeepers/:id/order' => 'storekeepers#order', :as => :order
   match 'storekeepers/:id/fufill' => 'storekeepers#fufill', :as => :fufill
 
   match 'cartitem/:id/destroy' => 'carts#destroy_item', :as => :cart_destroy

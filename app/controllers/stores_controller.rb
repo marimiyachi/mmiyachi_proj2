@@ -1,10 +1,8 @@
 class StoresController < ApplicationController
-  # authenticate storekeepers
-  before_filter :signed_in_user, only: [:edit, :update, :show]
-  before_filter :correct_user, only: [:edit, :update, :show]
-
   # GET /stores
-  # GET /stores.json
+  # Requires: user logged in
+  # Effects: returns list of all stores
+  # ???
   def index
     @stores = Store.all
 
@@ -15,19 +13,21 @@ class StoresController < ApplicationController
   end
 
   # GET /stores/1
-  # GET /stores/1.json
-  def show
-    @store = Store.find(params[:id])
-    @items = @store.items
+  # Requires: user logged in and store with store_id exists
+  # Effects: returns store information for specified store
+#  def show
+ #   @store = Store.find(params[:id])
+  #  @items = @store.items
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @store }
-    end
-  end
+   # respond_to do |format|
+    #  format.html # show.html.erb
+    #  format.json { render json: @store }
+   # end
+  #end
 
-  # provide information for shopping interface
-  # all stores and items available for view to signed in shopkeepers
+  # GET /stores/shop
+  # Requires: user logged in
+  # Effects: provide information about all stores and items
   def shop
     @store = Store.find(params[:id])
     @items = @store.items
@@ -35,7 +35,8 @@ class StoresController < ApplicationController
   end
 
   # GET /stores/new
-  # GET /stores/new.json
+  # Requires: user logged in and doesn't already have store
+  # Effects: returns form to create new store
   def new
     @store = Store.new
 
@@ -46,12 +47,16 @@ class StoresController < ApplicationController
   end
 
   # GET /stores/1/edit
+  # Requires: user logged in and owns specified store
+  # Effects: returns form to edit specified store
   def edit
     @store = Store.find(params[:id])
   end
 
   # POST /stores
-  # POST /stores.json
+  # Requires: user logged in and valid store information
+  # Modifies: Stores
+  # Effects: creates new store owned by user and redirects to store landing page
   def create
     @store = current_storekeeper.stores.build(params[:store])
 
@@ -67,7 +72,9 @@ class StoresController < ApplicationController
   end
 
   # PUT /stores/1
-  # PUT /stores/1.json
+  # Requires: user logged in and owns store
+  # Modifies: Stores
+  # Effects: updates store attributes as specified
   def update
     @store = Store.find(params[:id])
 
@@ -83,7 +90,8 @@ class StoresController < ApplicationController
   end
 
   # DELETE /stores/1
-  # DELETE /stores/1.json
+  # Requires: user logged in
+  # ???
   def destroy
     @store = Store.find(params[:id])
     @store.destroy
@@ -94,17 +102,4 @@ class StoresController < ApplicationController
     end
   end
 
-  # Authenticate users
-  private
-    # redirect if user is not logged in
-    def signed_in_user
-      redirect_to storekeepersignup_path, notice: "Please sign in." unless signed_in?
-    end
-
-    # redirect if user is accessing material they don't own
-    def correct_user
-      @store = Store.find(params[:id])
-      @storekeeper = Storekeeper.find_by_id(@store.storekeeper_id)
-      redirect_to root_path, notice: "Restricted access." unless current_storekeeper?(@storekeeper)
-    end
 end

@@ -15,11 +15,12 @@
           <ul class="nav pull-right">
             <li><%= link_to "Home", root_path %></li>
             <% if signed_in? %>
+            <li><%= link_to "Shop", stores_path %></li>
             <li><%= link_to "Profile", current_storekeeper %></li>
             <li><%= link_to "Cart", shopping_cart_url(:id => current_storekeeper.id) %></li>
-            <li><%= link_to "Sign out", storekeepersignout_path, method: "delete" %>
+            <li><%= link_to "Sign out", signout_path, method: "delete" %>
             <% else %>
-            <li><%= link_to "Sign in", storekeepersignin_path %></li>
+            <li><%= link_to "Sign in", signin_path %></li>
             <% end %>
           </ul>
         </nav>

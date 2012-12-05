@@ -1,11 +1,24 @@
 <% provide(:title, 'Welcome') %>
-<div class="center hero-unit">
+
+<div class="span6">
+<div class="center hero-unit home">
   <h1>Welcome to Mari's Shopping Cart Service</h1>
 
-  <% if signed_in? %>
-  <%= link_to "Shop", stores_path, class: "btn btn-large btn-primary" %>
-  <%= link_to "Sell", current_storekeeper, class: "btn btn-large btn-primary" %>
-  <% else %>
-  <%= link_to "Sign up", new_storekeeper_path, class: "btn btn-large btn-primary" %>
-  <% end %>
+
+</div></div>
+
+<div class="span5">
+  <div class="center hero-unit home">
+    <% if signed_in? %>
+        <h2>Welcome <%= current_storekeeper.name %>!</h2>
+        <p>Please utilize the many features of our site!
+        You can sell your own products, browse the merchandise of our other sellers,
+        and track store activity. Thanks for signing up.</p>
+    <% else %>
+        <p>Please utilize the many features of our site!
+          You can sell your own products, browse the merchandise of our other sellers,
+          and track store activity. We encourage you to register to access these features.</p>
+        <%= link_to "Sign up", new_storekeeper_path, class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
 </div>
