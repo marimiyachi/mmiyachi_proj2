@@ -35,7 +35,6 @@ class StorekeepersController < ApplicationController
   # Effects: returns form to create new user account
   def new
     @storekeeper = Storekeeper.new
-    @cart = Cart.new
 
     respond_to do |format|
       format.html # new.html.erb
@@ -49,7 +48,6 @@ class StorekeepersController < ApplicationController
   # Effects: creates user with given attributes and cart belonging to the user and redirects to user profile
   def create
     @storekeeper = Storekeeper.new(params[:storekeeper])
-    @cart = @storekeeper.carts.build(params[:cart])
     if @storekeeper.save
       sign_in @storekeeper
       redirect_to @storekeeper
