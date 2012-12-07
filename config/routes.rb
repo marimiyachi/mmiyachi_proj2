@@ -27,6 +27,9 @@ MmiyachiProj2::Application.routes.draw do
 
   match 'items/search/:id' => 'items#search'
 
+  match 'addcart/:id' => 'storekeepers#addcart'
+  match 'addsave/:id' => 'storekeepers#addsave'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

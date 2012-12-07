@@ -1,0 +1,46 @@
+            <% if !item.in_list %>
+            <tr>
+              <td><%= item.item_name %></td>
+              <% if item.quantity > 0.to_i %>
+                  <td>$<%= number_with_precision item.item_price, :precision => 2 %></td>
+                  <td><%= item.store_name %></td>
+              <% else %>
+                  <td>$0.00</td>
+                  <td>No longer available</td>
+              <% end %>
+              <td><a id="addsave<%= item.id %>">Save for later</a></td>
+              <td><%= link_to "Delete", cart_destroy_url(:id => item.id), :method=>:post %></td>
+            </tr>
+            <% else %>
+            <tr>
+              <td><%= item.item_name %></td>
+              <% if item.quantity > 0.to_i %>
+                  <td>$<%= number_with_precision item.item_price, :precision => 2 %></td>
+                  <td><%= item.store_name %></td>
+              <% else %>
+                  <td>$0.00</td>
+                  <td>No longer available</td>
+              <% end %>
+              <td>Saved Item</td>
+              <td><a id="addcart<%= item.id %>">Add to cart</a></td>
+            </tr>
+            <% end %>
+
+            <%= javascript_tag do %>
+                $('#addcart<%= item.id %>').click(function() {
+                $.ajax({
+                type: 'GET',
+                url: '/addcart/' + <%= item.id %>
+                });
+                });
+            <% end %>
+
+<%= javascript_tag do %>
+    $('#addsave<%= item.id %>').click(function() {
+        $.ajax({
+            type: 'GET',
+            url: '/addsave/' + <%= item.id %>
+        });
+    });
+
+<% end %>

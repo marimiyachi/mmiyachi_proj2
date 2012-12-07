@@ -27,3 +27,5 @@ $ ->
   $('#new-store-btn').button()
     .click ->
       $('#store-form').dialog("open")
+
+

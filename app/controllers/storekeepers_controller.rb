@@ -80,4 +80,18 @@ class StorekeepersController < ApplicationController
     @order = @storekeeper.final_checkout(current_storekeeper)
   end
 
+  def addsave
+    @cart_item = CartItem.find(params[:id])
+    @storekeeper = Storekeeper.find_by_id(@cart_item.storekeeper_id)
+    @cart_item.save_list
+    render partial: 'storekeepers/cart_items', :locals => {:item => @cart_item}
+  end
+
+  def addcart
+    @cart_item = CartItem.find(params[:id])
+    @storekeeper = Storekeeper.find_by_id(@cart_item.storekeeper_id)
+    @cart_item.unsave_list
+    render partial: 'storekeepers/cart_items', :locals => {:item => @cart_item}
+  end
+
 end
