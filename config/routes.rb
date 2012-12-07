@@ -25,7 +25,7 @@ MmiyachiProj2::Application.routes.draw do
   match 'cartitem/:id/destroy' => 'cart_items#destroy_item', :as => :cart_destroy
   match 'items/:id/destroy' => 'items#destroy', :as => :item_destroy
   match 'cartitem/:id/save' => 'cart_items#save_item', :as => :cart_save
-  match 'saved/:id/addcart' => 'saveds#add_cart', :as => :cart_add
+  match 'saved/:id/addcart' => 'cart_items#add_cart', :as => :cart_add
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

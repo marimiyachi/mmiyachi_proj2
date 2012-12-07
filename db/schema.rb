@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121205050633) do
+ActiveRecord::Schema.define(:version => 20121207021609) do
 
   create_table "cart_items", :force => true do |t|
     t.integer  "item_number"
@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(:version => 20121205050633) do
     t.integer  "cart_id"
     t.integer  "store_number"
     t.integer  "storekeeper_id"
+    t.boolean  "saved"
+    t.boolean  "in_list"
   end
 
   create_table "carts", :force => true do |t|

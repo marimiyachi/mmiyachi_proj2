@@ -1,5 +1,5 @@
 class CartItem < ActiveRecord::Base
-  attr_accessible :item_number, :store_number, :storekeeper_id
+  attr_accessible :item_number, :store_number, :storekeeper_id, :in_list
 
   belongs_to :storekeeper
 
@@ -22,4 +22,16 @@ class CartItem < ActiveRecord::Base
   def quantity
     return Item.find_by_id(self.item_number).quantity
   end
+
+  # change boolean in_list to true
+  def save_list
+    self.update_attributes(:in_list => true)
+  end
+
+  # change boolean in_list to false
+  def unsave_list
+    self.update_attributes(:in_list => false)
+  end
+
+
 end

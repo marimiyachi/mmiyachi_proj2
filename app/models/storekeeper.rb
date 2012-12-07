@@ -26,7 +26,7 @@ class Storekeeper < ActiveRecord::Base
   def total
     total = 0
     self.cart_items.each do |item|
-      if item.quantity > 0
+      if item.quantity > 0 and !item.in_list
         if Item.find_by_id(item.item_number)
           item_price = Item.find_by_id(item.item_number).price
           total = total + item_price
@@ -46,15 +46,15 @@ class Storekeeper < ActiveRecord::Base
     self.cart_items.each do |item|
       @item = @order.order_its.new()
       @original = Item.find_by_id(item.item_number)
-      if @original.quantity > 0
+      if @original.quantity > 0 and !item.in_list
         @item.update_attributes(item_number: item.item_number,
                                 price: @original.price,
                                 name: @original.name,
                                 status: "Pending",
                                 store_id: @original.store_id)
         @original.decrement_quantity
+        item.destroy
       end
-      item.destroy
     end
     return @order
   end
@@ -63,7 +63,7 @@ class Storekeeper < ActiveRecord::Base
   # creates new cart_item as mirror of original input item
   def add_item(item)
     new_item = self.cart_items.build()
-    new_item.update_attributes(item_number: item.id, store_number: item.store_id)
+    new_item.update_attributes(item_number: item.id, store_number: item.store_id, in_list: false)
   end
 
 
