@@ -1,0 +1,22 @@
+function reload_div(data) {
+    $('#items').html(data);
+}
+
+function empty_div() {
+    $('#items').html("");
+}
+
+function load() {
+    value = $('#item_name').val();
+    if(value != "") {
+        $.ajax({
+            type: 'POST',
+            url: '/items/search/' + value,
+            dataType: 'html',
+            success: function(data) { reload_div(data) },
+            error: function(XMLTHttpRequest, testStatus, errorThrown) {}
+        })
+    } else {
+        empty_div();
+    }
+}

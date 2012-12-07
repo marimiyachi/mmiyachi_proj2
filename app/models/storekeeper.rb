@@ -44,9 +44,9 @@ class Storekeeper < ActiveRecord::Base
     @order = customer.orders.new()
     @order.update_attributes(customer_id: customer.id, id: self.id, status: "Pending")
     self.cart_items.each do |item|
-      @item = @order.order_its.new()
       @original = Item.find_by_id(item.item_number)
       if @original.quantity > 0 and !item.in_list
+        @item = @order.order_its.new()
         @item.update_attributes(item_number: item.item_number,
                                 price: @original.price,
                                 name: @original.name,

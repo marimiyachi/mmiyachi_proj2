@@ -2,7 +2,20 @@
 
 <div class="span6">
 <div class="center hero-unit home">
-  <h1>Welcome to Mari's Shopping Cart Service</h1>
+  <h3>Welcome to Mari's Shopping Cart Service</h3>
+  <div id="item_search">
+    <%=  form_for(Item.new) do |f| %>
+        <input id="item_name" name="item[name]" type="text" placeholder="Search for items" autocomplete="off" />
+    <% end %>
+    <div id="items">
+    </div>
+    <%= javascript_tag do %>
+        $('#item_name').keyup(function() {
+        load();
+        });
+
+    <% end %>
+  </div>
 
 
 </div></div>

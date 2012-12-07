@@ -19,9 +19,6 @@ class CartItemsController < ApplicationController
     def save_item
       @cart_item = CartItem.find_by_id(params[:id])
       @cart_item.save_list
-      #@item = Item.find_by_id(@cart_item.item_number)
-      #@saved_item = current_storekeeper.saveds.create(item_id: @item.id)
-      #@cart_item.destroy
       redirect_to :back
     end
 
@@ -30,11 +27,6 @@ class CartItemsController < ApplicationController
     # Modifies: Cart_items
     # Effects: changes cart_item boolean marker for in_list to false
     def add_cart
-      #@saved = Saved.find(params[:id])
-      #@storekeeper = Storekeeper.find_by_id(params[:sid])
-      #@item = Item.find_by_id(@saved.item_id)
-      #@storekeeper.add_item(@item)
-      #@saved.destroy
       @cart_item = CartItem.find_by_id(params[:id])
       @cart_item.unsave_list
       redirect_to :back

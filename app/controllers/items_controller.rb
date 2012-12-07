@@ -65,4 +65,17 @@ class ItemsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def search
+    @name = params[:id]
+    @items = Item.find(:all, :conditions => {:name => @name})
+    @items = Item.where("name LIKE :prefix", prefix: "#{@name}%").all(:order => :name)
+    @notice = @name
+    if @items == []
+      @notice = "No items match your criteria."
+    else
+      @notice = nil
+    end
+    render :search, :layout => false
+  end
 end
