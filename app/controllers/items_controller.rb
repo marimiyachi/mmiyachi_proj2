@@ -66,6 +66,9 @@ class ItemsController < ApplicationController
     end
   end
 
+  # POST /items/search/
+  # Requires: user logged in
+  # Effects: returns all items whose prefix matches the query input
   def search
     @name = params[:id]
     @items = Item.find(:all, :conditions => {:name => @name})
