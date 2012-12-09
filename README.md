@@ -10,7 +10,10 @@ http://fathomless-ravine-5216.herokuapp.com
 
 ###Notes
 
-Any instructions or notes for your grader should be placed here.
+Problem Analysis is available here:
+https://docs.google.com/document/d/1dmGwtMvPMJekZ5MV40JN7vEIQNL8CZJ_eb8QcThH_ng/
+
+(I'm having trouble uploading it)
 
 
 ###Code Deliverables
